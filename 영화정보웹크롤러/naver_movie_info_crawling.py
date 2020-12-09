@@ -21,7 +21,11 @@ for n in range(0, len(list)) :
 
     # 개봉 날짜
     date = list[n].find(class_="info_txt1").find_all("dd")[0].text
-    start = date.index('20')
+    try:
+        start = date.index('20')
+    except ValueError:
+        start = date.index('19')
+        
     terminator = date.index('개봉')
     print("Date :\t", date[start:terminator])
 
