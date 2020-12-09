@@ -35,8 +35,10 @@ for n in range(0, len(list)) :
     # dataset[no-1][2]=date
 
     # 영화 장르
-    genre = list[n].find(class_="info_txt1").find_all("dd")[0].find("span").find_all("a")
-    genre = [genre.text.strip().replace("'", "                ") for genre in genre]
+    genrelist = list[n].find(class_="info_txt1").find_all("dd")[0].find("span").find_all("a")
+    genrelist = [genrelist.text.strip().replace("'", " & ") for genrelist in genrelist]
+    a = ""
+    genre = a.join(genrelist)
     print("Genre :\t", genre)
     # dataset[no-1][3]=genre
 
@@ -47,8 +49,10 @@ for n in range(0, len(list)) :
  
     # 감독
     try:
-        director = list[n].find(class_="info_txt1").find_all("dd")[1].find("span").find_all("a")
-        director = [director.text.strip().replace("'", "                ") for director in director]
+        directorlist = list[n].find(class_="info_txt1").find_all("dd")[1].find("span").find_all("a")
+        directorlist = [directorlist.text.strip().replace("'", " & ") for directorlist in directorlist]
+        a = ""
+        director = a.join(directorlist)
         print("Director :\t", director)
         # dataset[no-1][5]=director
 
@@ -59,8 +63,10 @@ for n in range(0, len(list)) :
 
     # 출연 배우
     try:
-        cast = list[n].find(class_="lst_dsc").find("dl", class_="info_txt1").find_all("dd")[2].find(class_="link_txt").find_all("a")
-        cast = [cast.text.strip().replace("'", "                ") for cast in cast]
+        castlist = list[n].find(class_="lst_dsc").find("dl", class_="info_txt1").find_all("dd")[2].find(class_="link_txt").find_all("a")
+        castlist = [castlist.text.strip().replace("'", " & ") for castlist in castlist]
+        a=""
+        cast=a.join(castlist)
         print("Cast :\t", cast)
         # dataset[no-1][6]=cast
 
@@ -70,18 +76,6 @@ for n in range(0, len(list)) :
 
     dataset.append([no,title,date,genre,point,director,cast])
     no += 1
-
-# 작은따옴표 없애기
-#for r in dataset:
-    #for i in range(0,200) :
-        #for j in range(1,6) :
-            #dataset[i][j] = dataset[i][j].replace("'",'')
-
-
-# 데이터셋 출력
-print(dataset)
-
-
 
 # db 저장
 import pymysql
@@ -93,13 +87,15 @@ for r in dataset:
     no = int(r[0])
     title = str(r[1])
     date = str(r[2])
-    #genre = str(r[3])
+    genre = str(r[3])
     point = str(r[4])
-    #director = str(r[5])
-    #cast = str(r[6])
+    director = str(r[5])
+    cast = str(r[6])
     
-    sql = "insert into sys.movie_info (no, title, date, point) values (%d, '%s', '%s', '%s')" % (no, title, date, point)
+    sql = "insert into sys.info (no, title, date, genre, point, director, cast) values (%d, '%s', '%s', '%s', '%s', '%s', '%s')" % (no, title, date, genre, point, director, cast)
 
     cursor.execute(sql)
     connect.commit()
 connect.close()
+
+
