@@ -1,15 +1,13 @@
-section header {
-    margin: 10px 160px;
-    margin-top: 40px;
-    font-size: 12px;
-}
-section header::first-letter {
-    color: #6c63ff;
+a {
+    color: #707070;
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
+.main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px 160px;
+    padding: 10px;
 }
 
 ul {
@@ -23,30 +21,35 @@ ul {
 }
 
 #movielist1 {
-    margin: 160px;
+    margin-top: 40px;
 }
 #movielist1 li {
-    display: inline;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
 }
 .list1-poster {
     width: 150px;
     height: 200px;
+    margin-bottom: 20px;
+}
+.list1-poster img{
+    width: 100%;
 }
 .list1-title {
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 12px;
-    color: #bcbcbcc0;
+    color: #707070;
 }
 .list1-score {
+    display: inline;
     font-size: 10px;
-    color: #bcbcbcc0;
-}
-.list1-score::first-letter {
-    color: #6c63ff;
+    color: #707070;
 }
 
 #movielist2 {
-    margin: 160px;
+    margin-top: 40px;
 }
 #movielist2 li {
     display: flex;
@@ -55,29 +58,92 @@ ul {
 .list2-poster {
     width: 150px;
     height: 200px;
+    margin: 10px 0px;
+    margin-right: 20px;
+}
+.list2-poster img{
+    width: 100%;
 }
 .list2-title {
+    margin-top: 20px;
     font-weight: bold;
     font-size: 12px;
-    color: #bcbcbcc0;
+    color: #707070;
 }
 .list2-info {
     font-size: 10px;
     color: black;
 }
 .list2-review {
+    position: relative;
+    left: 200px;
+    top: 20px;
     font-weight: bold;
     font-size: 12px;
-    color: #bcbcbcc0;
+    color:#707070;
 }
 .list2-review::first-letter {
     color: #6c63ff;
 }
 .list2-badge {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+}
+.list2-badge img{
+    width: 100%;
 }
 #write_review {
     font-size: 10px;
     color: #6c63ff;
+}
+
+.gallery {
+    float: left;
+}
+.gallery-images {
+    position: relative;
+    margin: 50px 20px;
+    width: 600px;
+    height: 400px;
+}
+.slide-image {
+    width: 100%;
+}
+.slide-button-left {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.slide-button-right {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.slide-button-left:hover{
+    opacity: 0.8;
+}
+.slide-button-right:hover{
+    opacity: 0.8;
+}
+
+footer {
+    clear: both; 
+    text-align: center; 
+    padding: 20px; 
 }
