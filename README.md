@@ -70,6 +70,6 @@ Within one hexagon, you can compare the scores of professionals with those of or
   - 이화여자대학교 컴퓨터공학과 1871006
 - MinA ()
   - 이화여자대학교 컴퓨터공학과 1971005
-- Seoyoung ()
-  - 이화여자대학교 컴퓨터공학과 1971005 권민아
+- Seoyoung (dltjdud808)
+  - 이화여자대학교 컴퓨터공학과 1971033
 
