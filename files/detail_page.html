@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sonemary</title>
-	<link rel="stylesheet" href="detail_style.css">
-	<link rel="stylesheet" href="header_style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -36,75 +35,79 @@
 		<article class="main-article">
 
 			<article class="overview">
-				<header class="section-header">
+				<header class="section1-header">
 					<h2>Overview</h2>
-					<div class="write-review-button">
+					<div class="section1-header-btn">
 						<a href="./review_page.html">Write your Review</a>
 					</div>
 				</header>
-				<section class="overview-contents">
-					<div class="overview-contents-image">
+				<section class="section1-contents">
+					<div class="section1-img">
 						<img src="image/movie_spiderman_0.png">
           </div>
-						<div class="overview-contents-details">
-							<div class="overview-title-badges">
-								<div class="overview-title">
-									<h1>Spider-Man: Homecoming</h1>
-								</div>
-								<div class="overview-badges">
-									<img src="">
-              </div>
-								</div>
-								<div class="overview-details">
-									<div class="overview-detail-1">
-										Action | English | 2017
-									</div>
-									<div class="overview-detail-2">
-										<span>Director</span><span>Jon Watts</span>
-										<br>
-										<span>Release date</span><span>2017.07.05</span>
-										<br>
-										<span>Country</span><span>USA</span>
-										<br>
-										<span>Running time</span><span>133m</span>
-									</div>
-									<div class="overview-detail-3">
-										Following the events of Captain America: Civil War, Peter Parker, with the help
-										of his mentor Tony Stark, tries to balance his life as an ordinary high school
-										student in Queens, New York City, with fighting crime as h...
-									</div>
-								</div>
+					<div class="section1-info">
+						<div class="info-title">
+							<h1>Spider-Man: Homecoming</h1>
+						</div>
+						<div class="info-details">
+							<div style="font-weight: bold">
+								Action | English | 2017
 							</div>
+							<div>
+								<span>Director</span><span>Jon Watts</span>
+								<br>
+								<span>Release date</span><span>2017.07.05</span>
+								<br>
+								<span>Country</span><span>USA</span>
+								<br>
+								<span>Running time</span><span>133m</span>
+							</div>
+							<div>
+								Following the events of Captain America: Civil War, Peter Parker, with the help
+								of his mentor Tony Stark, tries to balance his life as an ordinary high school
+								student in Queens, New York City, with fighting crime as h...
+							</div>
+						</div>
+					</div>
 				</section>
 			</article>
 
 			<article class="badges">
-				<header class="section-header">
+				<header class="section1-header">
 					<h2>Badge</h2>
 				</header>
 
-				<section>
-					<div class="movie-badge">
-						<div class="badge-image">
-							<img src="image/badge_story.png">
-            </div>
-							<div class="badge-detial">
-								<p class="badge-name">Story/Screenplay Badge</p>
-								<p class="badge-info">Many people like the story and screenplay of this movie.</p>
-							</div>
-						</div>
+				<section class="section2-contents">
+					<div class="section2-img">
+						<img src="image/badge_story.png">
+          </div>
+					<div class="section2-info">
+						<p class="info-main">Story/Screenplay Badge</p>
+						<p class="info-sub">Many people like the story and screenplay of this movie.</p>
+					</div>
 				</section>
+
+        <section class="section2-contents">
+          <div class="section2-img">
+            <img src="image/badge_story.png">
+          </div>
+          <div class="section2-info">
+            <p class="info-main">Story/Screenplay Badge</p>
+            <p class="info-sub">Many people like the story and screenplay of this movie.</p>
+          </div>
+        </section>
+
 			</article>
 
 			<article class="score-comparison">
-				<header class="section-header">
+				<header class="section1-header">
 					<h2>Score Comparison</h2>
-					<div class="write-review-button">
-						<a href="./리뷰목록페이지.html">See Review</a>
+					<div class="section1-header-btn">
+						<a href="./score_page.html">See Review</a>
 					</div>
 				</header>
 
-				<section class="user-critic-score">
+				<section class="section3-visualize">
 					<div class="score">
 						<p>User</p>
 						<img src="유저 스코어 시각화 이미지">
@@ -121,84 +124,62 @@
 			</article>
 
 			<div class="gallery-cast">
-				<article class="gallery">
-					<header class="section-header">
+				<article class="gallery" style="float: left;">
+					<header class="section1-header">
 						<h2>Gallery</h2>
 					</header>
 
-					<section class="gallery-images">
+					<section class="section4-gallery">
 						<img class="slide-image" src="image/movie_spiderman_1.png">
 						<img class="slide-image" src="image/movie_spiderman_2.png">
 						<img class="slide-image" src="image/movie_spiderman_3.png">
 						<img class="slide-image" src="image/movie_spiderman_4.png">
 
-						<a class="slide-button-left" onclick="plusDivs(-1)">❮</a>
-						<a class="slide-button-right" onclick="plusDivs(1)">❯</a>
+						<a class="slide-btn prev" onclick="plusDivs(-1)">❮</a>
+						<a class="slide-btn next" onclick="plusDivs(1)">❯</a>
 					</section>
+
 				</article>
 
 				<article class="cast-crew">
-					<header class="section-header">
+					<header class="section1-header">
 						<h2>Cast & Crew</h2>
 					</header>
 
-					<section class="cast-list">
-						<div class="cast">
-							<div class="cast-image">
-								<img src="image/cast_spiderman_1.png">
-              </div>
-								<div class="cast-details">
-									<p class="cast-name">Tom Holland</p>
-									<p class="cast-info">Peter Parker</p>
-								</div>
+					<section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_1.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Tom Holland</p>
+							<p class="info-cast">Peter Parker</p>
 						</div>
-            <div class="cast">
-							<div class="cast-image">
-								<img src="image/cast_spiderman_2.png">
-              </div>
-								<div class="cast-details">
-									<p class="cast-name">Robert Downey Jr.</p>
-									<p class="cast-info">Tony Stark</p>
-								</div>
+				  </section>
+          <section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_2.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Robert Downey Jr.</p>
+							<p class="info-cast">Tony Stark</p>
 						</div>
-            <div class="cast">
-							<div class="cast-image">
-								<img src="image/cast_spiderman_3.png">
-              </div>
-								<div class="cast-details">
-									<p class="cast-name">Zendaya Maree Stoermer Coleman</p>
-									<p class="cast-info">Michelle Jones</p>
-								</div>
+				  </section>
+          <section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_3.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Zendaya Maree Stoermer Coleman</p>
+							<p class="info-cast">Michelle Jone</p>
 						</div>
-					</section>
+				  </section>
 				</article>
 			</div>
 
 
 		</article>
 	</div>
-
-	<script>
-		var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("slide-image");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-	</script>
-
+	<script type="text/javascript" src="main_script.js"></script>
 
 </body>
-
 </html>
