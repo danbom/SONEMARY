@@ -1,0 +1,83 @@
+section header {
+    margin: 10px 160px;
+    margin-top: 40px;
+    font-size: 12px;
+}
+section header::first-letter {
+    color: #6c63ff;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+#view_more {
+    margin-inline-end: 160px;
+    float: right;
+    color: #6c63ff;
+}
+
+#movielist1 {
+    margin: 160px;
+}
+#movielist1 li {
+    display: inline;
+}
+.list1-poster {
+    width: 150px;
+    height: 200px;
+}
+.list1-title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #bcbcbcc0;
+}
+.list1-score {
+    font-size: 10px;
+    color: #bcbcbcc0;
+}
+.list1-score::first-letter {
+    color: #6c63ff;
+}
+
+#movielist2 {
+    margin: 160px;
+}
+#movielist2 li {
+    display: flex;
+    margin-bottom: 40px;
+}
+.list2-poster {
+    width: 150px;
+    height: 200px;
+}
+.list2-title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #bcbcbcc0;
+}
+.list2-info {
+    font-size: 10px;
+    color: black;
+}
+.list2-review {
+    font-weight: bold;
+    font-size: 12px;
+    color: #bcbcbcc0;
+}
+.list2-review::first-letter {
+    color: #6c63ff;
+}
+.list2-badge {
+    width: 20px;
+    height: 20px;
+}
+#write_review {
+    font-size: 10px;
+    color: #6c63ff;
+}
