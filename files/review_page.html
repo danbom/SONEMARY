@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Sonemary</title>
-	<link rel="stylesheet" href="review_style.css">
-	<link rel="stylesheet" href="header_style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -13,10 +12,10 @@
 
 		<header id="main-header">
 			<div id="logo">
-				<a href=""><img src="image/SONEMARY.png"></a>
+				<a href="main_page.html"><img src="image/SONEMARY.png"></a>
 			</div>
 			<div id="username">
-				Welcome, USER <img src="image/profile-user.png">
+				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
       </div>
 				<nav>
 					<ul id="menu-list">
@@ -35,43 +34,44 @@
 
 		<article class="main-article">
 
-			<header class="article-header">
+			<header class="section1-header">
 				<h1>Write your Review</h1>
 			</header>
 
-			<article class="movie-information-view">
-				<div class="movie-information-view-left">
-					<section class="movie-information">
-						<div class="movie-name">
-							<h2>Spider-Man: Homecoming</h2>
-						</div>
-						<div class="movie-details">
-							Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
-	          </div>
+			<article class="sectoin1-contents">
+				<div class="section1-info" style="float: left;">
+					<div class="info-title" style="font-weight: bold">
+						Spider-Man: Homecoming
+					</div>
+					<div class="info-details">
+						Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
+					</div>
+					<section class="visualize-gallery">
+						<img class="slide-image" src="image/score_user.png">
+						<img class="slide-image" src="image/score_critic.png">
+						<img class="slide-image" src="image/score_comparison.png">
+
+						<a class="slide-btn prev" style="top: 100%;" onclick="plusDivs(-1)">❮</a>
+						<a class="slide-btn next" style="top: 100%;" onclick="plusDivs(1)">❯</a>
 					</section>
-					<section class="movie-score">
-						<img src="visualization" width="400" height="350">
-	        </section>
 				</div>
-				<div class="movie-information-view-right">
-					<section class="movie-image">
-						<img src="image/movie_spiderman.png" width="750" height="430">
-	        </section>
+				<div class="section1-img" style="float: right;">
+						<img src="image/movie_spiderman_0.png">
 				</div>
 			</article>
 
 			<div class="user-review">
 				<article class="review-score-input">
 					<section class="review-form">
-						<header class="section-header">
+						<header class="section1-header">
 							<h1>Review</h1>
 						</header>
 						<div class="comment-input">
-							<textarea id="comment" name="comment" cols="100" rows="15" placeholder="comments..."></textarea>
+							<textarea id="comment" name="comment" cols="90" rows="15" placeholder="comments..."></textarea>
 						</div>
 					</section>
 					<section class="score-form">
-						<header class="section-header">
+						<header class="section1-header">
 							<h1>Score</h1>
 						</header>
 						<div>
@@ -184,11 +184,9 @@
 				</article>
 
 				<section class="submit-cancel">
-					<form accept="./detail_page.html" method="" class="button">
-						<div class="cancel-button">
-							<input type="button" id="cancel" name="cancel" value="Cancel">
-	          </div>
-					</form>
+					<div class="cancel-button button">
+						<a href="detail_page.html">Cancel</a>
+					</div>
 					<form action="" method="" class="button">
 						<div class="submit-button">
 							<input type="submit" id="submit" name="submit" value="Submit">
@@ -200,6 +198,7 @@
 		</article>
 
 	</div>
+ <script type="text/javascript" src="main_script.js"></script>
 </body>
 
 </html>
