@@ -427,6 +427,17 @@ footer {
   width: 130px;
   height: 35px;
   font-weight: bold;
+  cursor: pointer;
+}
+fieldset {
+  border: none;
+}
+input[type=number] {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 25px;
 }
 
 
