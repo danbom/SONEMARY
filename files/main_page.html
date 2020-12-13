@@ -38,17 +38,12 @@
       </header>
     </div>
 
-    <!-- <article class="preview">
-      <section class="gallery-images">
-        <img class="slide-image" src="image/movie_spiderman_1.png" />
-        <img class="slide-image" src="image/movie_spiderman_2.png" />
-        <img class="slide-image" src="image/movie_spiderman_3.png" />
-        <img class="slide-image" src="image/movie_spiderman_4.png" />
-
-        <a class="slide-button-left" onclick="plusDivs(-1)">❮</a>
-        <a class="slide-button-right" onclick="plusDivs(1)">❯</a>
-      </section>
-    </article> -->
+    <div class="main_preview">
+      <img class="slide-image" src="image/movie_spiderman_1.png" />
+      <img class="slide-image" src="image/movie_spiderman_2.png" />
+      <img class="slide-image" src="image/movie_spiderman_3.png" />
+      <img class="slide-image" src="image/movie_spiderman_4.png" />
+    </div>
 
     <article class="main-article">
       <article class="Action Movies" style="display: grid;">
@@ -63,7 +58,9 @@
         <div class="section6">
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Spider-Man: Homecoming </h4>
@@ -77,7 +74,9 @@
   
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Mission: Impossible </h4>
@@ -90,7 +89,9 @@
   
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Spider-Man: Homecoming </h4>
@@ -104,7 +105,9 @@
   
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Mission: Impossible </h4>
@@ -117,7 +120,9 @@
 
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Spider-Man: Homecoming </h4>
@@ -131,7 +136,9 @@
   
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Spider-Man: Homecoming </h4>
@@ -145,7 +152,9 @@
   
           <section class="section6-contents">
             <div class="section6-img">
-              <img src="image/movie_spiderman_poster.jpg">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
             <div class="section6-info">
               <h4 class="info-title"> Spider-Man: Homecoming </h4>
@@ -168,7 +177,42 @@
         <div class="section7">
           <div class="section7-contents">
             <div class="section7-img">
-              <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
+            </div>
+
+            <div class="section7-info">
+              <div>
+                <div class="title">
+                  <h4> Spider-Man: Homecoming </h4>
+                </div>
+                <div class="info-details">
+                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
+                    2h 13m | R12</p>
+                </div>
+                <div class="info-badge">
+                  <img src="image/badge_story.png" />
+                </div>
+              </div>
+              <div class="info-review">
+                <a href="review_page.html"> Write your Review </a>
+              </div>
+            </div>
+
+            <div class="section7-score">
+              <div class="graph" style="width: 150px; height: 150px;">
+                <!-- <img src="image/badge_story.png" /> -->
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="section7-contents">
+            <div class="section7-img">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
 
             <div class="section7-info">
@@ -198,7 +242,9 @@
 
           <div class="section7-contents">
             <div class="section7-img">
-              <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
 
             <div class="section7-info">
@@ -228,37 +274,9 @@
 
           <div class="section7-contents">
             <div class="section7-img">
-              <img src="image/movie_spiderman_poster.jpg"/>
-            </div>
-
-            <div class="section7-info">
-              <div>
-                <div class="title">
-                  <h4> Spider-Man: Homecoming </h4>
-                </div>
-                <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
-                    2h 13m | R12</p>
-                </div>
-                <div class="info-badge">
-                  <img src="image/badge_story.png" />
-                </div>
-              </div>
-              <div class="info-review">
-                <a href="review_page.html"> Write your Review </a>
-              </div>
-            </div>
-
-            <div class="section7-score">
-              <div class="graph" style="width: 150px; height: 150px;">
-                <img src="image/badge_story.png" />
-              </div>
-            </div>
-          </div>
-
-          <div class="section7-contents">
-            <div class="section7-img">
-              <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
             </div>
 
             <div class="section7-info">
@@ -292,5 +310,7 @@
     </article>
 
     <footer id="main_footer">Copyright &copy; 2020</footer>
+  
+    <script type="text/javascript" src="main_script.js"></script>
   </body>
 </html>
