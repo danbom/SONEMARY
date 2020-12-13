@@ -66,7 +66,7 @@ Within one hexagon, you can compare the scores of professionals with those of or
 
 - Eunyoung (danbom)
   - 이화여자대학교 컴퓨터공학과 1871017
-- Sunwoo ()
+- Sunwoo (mallang7)
   - 이화여자대학교 컴퓨터공학과 1871006
 - MinA ()
   - 이화여자대학교 컴퓨터공학과 1971005
