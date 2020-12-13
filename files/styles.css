@@ -381,9 +381,10 @@ footer {
 .evaluation-standard {
   background-color: #bcbcbcc0;
   border-radius: 30px;
-  width: 440px;
+  width: 350px;
   height: 50px;
   margin: 10px;
+  display: flex;
 }
 .evaluation {
   display: inline-block;
@@ -391,6 +392,10 @@ footer {
 .criteria {
   font-weight: bold;
   color: #303030;
+  margin: 12px 20px;
+  flex-grow: 1;
+}
+.scoreInput {
   margin: 12px 20px;
 }
 .submit-cancel {
@@ -418,6 +423,9 @@ footer {
   width: 130px;
   height: 30px;
 }
+.submit-button {
+  display: inline-block;
+}
 #submit {
   border: 2px solid #6c63ff;
   border-radius: 20px;
@@ -436,8 +444,13 @@ input[type=number] {
   background: white;
   border: none;
   border-radius: 10px;
-  width: 30px;
+  width: 35px;
   height: 25px;
+  text-align: center;
+}
+.evaluation-standard h4 {
+  font-size: 16px;
+  display: inline;
 }
 
 
