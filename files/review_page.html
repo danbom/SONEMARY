@@ -62,137 +62,67 @@
 
 			<div class="user-review">
 				<article class="review-score-input">
-					<section class="review-form">
-						<header class="section1-header">
-							<h1>Review</h1>
-						</header>
-						<div class="comment-input">
-							<textarea id="comment" name="comment" cols="90" rows="15" placeholder="comments..."></textarea>
-						</div>
-					</section>
-					<section class="score-form">
-						<header class="section1-header">
-							<h1>Score</h1>
-						</header>
-						<div>
-							<ul class="evaluation-standard-list">
-								<li class="evaluation-standard">
-									<div class="evaluation criteria"> Story & Screenplay</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+					<!-- 리뷰 (comment & 6 score) 등록 form. php로 전송 -->
+					<form method="GET" action="review & score.php" accept-charset="utf-8" name="score_input">
+						<fieldset>
+							<!-- 코멘트 입력 -->
+							<section class="review-form">
+								<header class="section1-header">
+									<h1>Review</h1>
+								</header>
+								<div class="comment-input">
+									<textarea id="comment" name="comment" cols="90" rows="15" placeholder="comments..."></textarea>
+								</div>
+							</section>
+						
+							<!-- 스코어 6가지 입력 -->
+							<section class="score-form">
+								<header class="section1-header">
+									<h1>Score</h1>
+								</header>
+							
+								<div class="evaluation-standard-list">
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Story & Screenplay </div>
+										<input type="number" min="0" max="10" step="1" name="story">
+										<h4>/10</h4>
 									</div>
-								</li>
-								<li class="evaluation-standard">
-									<div class="evaluation criteria">Sound & Music</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Sound & Music </div>
+										<input type="number" min="0" max="10" step="1" name="music">
 									</div>
-								</li>
-								<li class="evaluation-standard">
-									<div class="evaluation criteria">Visual & Design</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Visual Design </div>
+										<input type="number" min="0" max="10" step="1" name="design">
 									</div>
-								</li>
-								<li class="evaluation-standard">
-									<div class="evaluation criteria">Acting</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Acting </div>
+										<input type="number" min="0" max="10" step="1" name="acting">
 									</div>
-								</li>
-								<li class="evaluation-standard">
-									<div class="evaluation criteria">Emotional Impact</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Emotional Impact </div>
+										<input type="number" min="0" max="10" step="1" name="impact">
 									</div>
-								</li>
-								<li class="evaluation-standard">
-									<div class="evaluation criteria">Message</div>
-									<div class="evaluation unrated-stars">
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<span class="unrated-star-image" src="">☆</span>
-										<div class="rated-stars">
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-											<span class="rated-star-image" src=""></span>
-										</div>
+									<div class="evaluation-standard">
+										<div class="evaluation criteria"> Message </div>
+										<input type="number" min="0" max="10" step="1" name="message">
 									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-				</article>
-
-				<section class="submit-cancel">
-					<div class="cancel-button button">
-						<a href="detail_page.html">Cancel</a>
-					</div>
-					<form action="" method="" class="button">
-						<div class="submit-button">
-							<input type="submit" id="submit" name="submit" value="Submit">
-	          </div>
+								</div>
+							</section>
+	
+							<!-- 등록 버튼 -->
+							<section class="submit-cancel">
+								<div class="cancel-button button">
+									<a href="detail_page.html">Cancel</a>
+								</div>
+								<div class="submit-button">
+									<input type="submit" id="submit" name="submit" value="Submit">
+								</div>
+							</section>
+						</fieldset>
+						
 					</form>
-				</section>
+				</article>
 			</div>
 
 		</article>
