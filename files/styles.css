@@ -54,24 +54,25 @@ textarea {
   margin: 30px;
   font-size: 15px;
 }
-#search {
+#searchKey {
   position: absolute;
   top: 30px;
   right: 10px;
   width: 250px;
   border: 2px solid #707070;
   border-radius: 15px;
-}
-#searchKey {
-  border: none;
   outline: none;
   background: none;
   padding: 5px 10px;
   font-size: 70%;
 }
-#search img {
-  width: 10px;
-  margin-left: 40px;
+#searchBtn {
+  position: absolute;
+  top: 38px;
+  right: 25px;
+  width: 15px;
+  border: none;
+  background: none;
 }
 
 /* 메인 부분 */
