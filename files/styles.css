@@ -574,5 +574,20 @@ a.signin:active {
   flex-direction: column;
   width: 150px;
   height: 310px;
-  margin : 5px;
+  margin : 15px;
 }
+.search-list-std {
+  float: left;
+  font-size: 13px;
+}
+.search-list-score {
+  float: right;
+  margin: 2px;
+  font-size: 12px;
+  font-weight: weight;
+}
+
+/*
+.abcd {
+  border: 1px solid red;
+} */
