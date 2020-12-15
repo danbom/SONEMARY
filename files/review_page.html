@@ -3,66 +3,112 @@
 
 <head>
 	<meta charset="utf-8" />
-    <meta name="description" content="Sonemary main page" />
-    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
-    <title>Write Review Page</title>
-    <link rel="stylesheet" href="styles.css?after234452232f22" />
+	<meta name="description" content="Sonemary main page" />
+	<meta name="keywords" content="HTML5, CSS3, JavaScript" />
+	<title>Review Page</title>
+	<link rel="stylesheet" href="styles.css?after234452232f22" />
 </head>
 
 <body>
 	<div id="app">
 		<header id="main-header">
-		  <div id="logo">
-			<a href="main_page.html"><img src="image/SONEMARY.png" /></a>
-		  </div>
-		  <div id="username">
-			<a href="my_page.html">
-			  Welcome, USER 
-			  <img src="image/profile-user.png"/>
-			</a>
-		  </div>
-		  <nav>
-			<ul id="menu-list">
-			  <li><a href="genre.html" id="ami"> Genre </a></li>
-			  <li><a href="top10.html" id="ami"> Top10 </a></li>
-			  <li><a href="new.html" id="ami"> New </a></li>
-			</ul>
-		  </nav>
-		  <form id="search" onClick="location.href='search_page.html'">
-					  <input type="text" id="searchKey" name="searchKey" placeholder="search...">
-			  <button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
-				  </form>
-  
+			<div id="logo">
+				<a href="main_page.html"><img src="image/SONEMARY.png" /></a>
+			</div>
+			<div id="username">
+				<a href="my_page.html">
+					Welcome, USER
+					<img src="image/profile-user.png" />
+				</a>
+			</div>
+			<nav>
+				<ul id="menu-list">
+					<li><a href="genre.html" id="ami"> Genre </a></li>
+					<li><a href="top10.html" id="ami"> Top10 </a></li>
+					<li><a href="new.html" id="ami"> New </a></li>
+				</ul>
+			</nav>
+			<form id="search" onClick="location.href='search_page.html'">
+				<input type="text" id="searchKey" name="searchKey" placeholder="search...">
+				<button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
+			</form>
+
 		</header>
-	  </div>
+	</div>
 
-		<article class="main-article">
+	<article class="main-article" style="margin-bottom: 10%;">
 
-			<header class="section1-header">
-				<h1>Write your Review</h1>
+		<article class="sectoin1-contents">
+			<div class="section1-info" style="float: left;">
+				<div class="info-title" style="font-weight: bold">
+					Spider-Man: Homecoming
+				</div>
+				<div class="info-details">
+					Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
+				</div>
+				<section class="visualize-gallery">
+
+					<div class="section7-contents">
+						<div class="section4-score">
+							<div class="graph">
+								<div class="chartjs-size-monitor">
+									<div class="chartjs-size-monitor-expand">
+										<div class=""></div>
+									</div>
+									<div class="chartjs-size-monitor-shrink">
+										<div class=""></div>
+									</div>
+								</div>
+								<canvas id="myChart1" style="width: 270; height: 270; display: block;" width="270"
+									height="270" class="chartjs-render-monitor"></canvas>
+							</div>
+						</div>
+					</div>
+
+				</section>
+			</div>
+			<div>
+				<header class="section1-header" style="margin: 10px 0px;">
+					<h2>Assessment Guidelines</h2>
+				</header>
+				<div style="font-size: 12pt; font-weight: bold;"> STORY & SCREENPLAY<br> </div>
+				<div style="font-size: 11pt;"> This evaluation criteria assesses the storyline and script of a movie. If
+					you think the story of this movie is solid or if you think the double track is great, please give a
+					high score on this evaluation standard.<br>
+				</div>
+
+				<div style="font-size: 12pt; font-weight: bold;"> SOUND & MUSIC <br> </div>
+				<div style="font-size: 9pt;"> If you think the background music of this movie was beautiful or if you think the atmosphere of the
+					movie and the music of the movie matched well, please raise the score of this evaluation standard.<br>
+					VISUAL DESIGN <br>
+				</div>
+
+				<div style="font-size: 12pt; font-weight: bold;"> VISUAL DESIGN <br> </div>
+				<div style="font-size: 9pt;"> If you like the video of this movie or if you think the movie has excellent visual beauty, please give a high score on this evaluation standard.<br>
+				</div>
+				
+				<div style="font-size: 12pt; font-weight: bold;"> ACTING<br> </div>
+				<div style="font-size: 9pt;"> If the actors' performances in this movie were good or if they were immersed in the acting, please raise the score of this evaluation standard.<br>
+				</div>
+				
+				<div style="font-size: 12pt; font-weight: bold;"> EMOTIONAL IMPACT<br> </div>
+				<div style="font-size: 9pt;"> If the atmosphere of this movie is so impressive that it lingers even after the movie is over, please raise the score of this evaluation standard.<br>
+					
+				</div>
+				<div style="font-size: 12pt; font-weight: bold;"> MESSAGE<br> </div>
+				<div style="font-size: 9pt;"> If the message this movie is trying to convey is well delivered or you like the lesson, please raise the
+					score on this evaluation standard.<br>
+				
+				
+				
+			</div>
+		</article>
+
+
+		<article class="review">
+			<header class="section1-header" style="margin: 50px 0px;">
+				<h2>Write your Review</h2>
 			</header>
-
-			<article class="sectoin1-contents">
-				<div class="section1-info" style="float: left;">
-					<div class="info-title" style="font-weight: bold">
-						Spider-Man: Homecoming
-					</div>
-					<div class="info-details">
-						Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
-					</div>
-					<section class="visualize-gallery">
-						<img class="slide-image" src="image/score_user.png">
-						<img class="slide-image" src="image/score_critic.png">
-						<img class="slide-image" src="image/score_comparison.png">
-
-						<a class="slide-btn prev" style="top: 100%;" onclick="plusDivs(-1)">❮</a>
-						<a class="slide-btn next" style="top: 100%;" onclick="plusDivs(1)">❯</a>
-					</section>
-				</div>
-				<div class="section1-img" style="float: right;">
-						<img src="image/movie_spiderman_0.png">
-				</div>
-			</article>
 
 			<div class="user-review">
 				<article class="review-score-input">
@@ -72,57 +118,56 @@
 							<!-- 코멘트 입력 -->
 							<section class="review-form">
 								<header class="section1-header">
-									<h1>Review</h1>
 								</header>
 								<div class="comment-input">
-									<textarea id="comment" name="comment" cols="90" rows="15" placeholder="comments..."></textarea>
+									<textarea id="comment" name="comment" cols="90" rows="15"
+										placeholder="comments..."></textarea>
 								</div>
 							</section>
-						
+
 							<!-- 스코어 6가지 입력 -->
-							<section class="score-form">
+							<section class="score-form" style="margin-bottom: 5%;">
 								<header class="section1-header">
-									<h1>Score</h1>
 								</header>
-							
+
 								<div class="evaluation-standard-list">
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Story & Screenplay </div>
+										<div class="evaluation criteria"> STORY & SCREENPLAY </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="story">
 											<h4>/10</h4>
 										</div>
 									</div>
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Sound & Music </div>
+										<div class="evaluation criteria"> SOUND & MUSIC </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="music">
 											<h4>/10</h4>
 										</div>
 									</div>
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Visual Design </div>
+										<div class="evaluation criteria"> VISUAL DESIGN </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="design">
 											<h4>/10</h4>
 										</div>
 									</div>
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Acting </div>
+										<div class="evaluation criteria"> ACTING </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="acting">
 											<h4>/10</h4>
 										</div>
 									</div>
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Emotional Impact </div>
+										<div class="evaluation criteria"> EMOTIONAL IMPACT </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="impact">
 											<h4>/10</h4>
 										</div>
 									</div>
 									<div class="evaluation-standard">
-										<div class="evaluation criteria"> Message </div>
+										<div class="evaluation criteria"> MESSAGE </div>
 										<div class="evaluation scoreInput">
 											<input type="number" min="0" max="10" step="1" name="message">
 											<h4>/10</h4>
@@ -130,26 +175,41 @@
 									</div>
 								</div>
 							</section>
-	
+
 							<!-- 등록 버튼 -->
 							<section class="submit-cancel">
 								<div class="cancel-button button">
-									<a href="detail_page.html">Cancel</a>
+									<a href="score_page.html">Cancel</a>
 								</div>
 								<div class="submit-button">
-									<input type="submit" id="submit" name="submit" value="Submit">
+									<a href="score_page.html"><input type="submit" id="submit" name="submit"
+											value="Submit"></a>
+
 								</div>
 							</section>
 						</fieldset>
-						
+
 					</form>
 				</article>
 			</div>
 
+
 		</article>
 
-	
- <script type="text/javascript" src="main_script.js"></script>
+	</article>
+
+
+
+
+
+
+
+	</article>
+
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="score_script.js"></script>
 </body>
 
 </html>
