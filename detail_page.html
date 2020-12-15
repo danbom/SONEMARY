@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Sonemary</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div id="app">
+
+		<header id="main-header">
+			<div id="logo">
+				<a href="main_page.html"><img src="image/SONEMARY.png"></a>
+			</div>
+			<div id="username">
+				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
+			</div>
+				<nav>
+					<ul id="menu-list">
+						<li><a href=""> Genre </a></li>
+						<li><a href=""> Top10 </a></li>
+						<li><a href=""> New </a></li>
+					</ul>
+				</nav>
+				<form action="" method="">
+					<div id="search">
+						<input type="text" id="searchKey" name="searchKey" placeholder="search...">
+						<img src="image/loupe.png">
+        </div>
+				</form>
+		</header>
+
+		<article class="main-article">
+
+			<article class="overview">
+				<header class="section1-header">
+					<h2>Overview</h2>
+					<div class="section1-header-btn">
+						<a href="./review_page.html">Write your Review</a>
+					</div>
+				</header>
+				<section class="section1-contents">
+					<div class="section1-img">
+						<img src="image/movie_spiderman_0.png">
+          </div>
+					<div class="section1-info">
+						<div class="info-title">
+							<h1>Spider-Man: Homecoming</h1>
+						</div>
+						<div class="info-details">
+							<div style="font-weight: bold">
+								Action | English | 2017
+							</div>
+							<div>
+								<span>Director</span><span>Jon Watts</span>
+								<br>
+								<span>Release date</span><span>2017.07.05</span>
+								<br>
+								<span>Country</span><span>USA</span>
+								<br>
+								<span>Running time</span><span>133m</span>
+							</div>
+							<div>
+								Following the events of Captain America: Civil War, Peter Parker, with the help
+								of his mentor Tony Stark, tries to balance his life as an ordinary high school
+								student in Queens, New York City, with fighting crime as h...
+							</div>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<article class="badges">
+				<header class="section1-header">
+					<h2>Badge</h2>
+				</header>
+
+				<section class="section2-contents">
+					<div class="section2-img badge">
+						<img src="image/badge_story.png">
+          </div>
+					<div class="section2-info">
+						<p class="info-main">Story/Screenplay Badge</p>
+						<p class="info-sub">Many people like the story and screenplay of this movie.</p>
+					</div>
+				</section>
+
+        <section class="section2-contents">
+          <div class="section2-img badge">
+            <img src="image/badge_story.png">
+          </div>
+          <div class="section2-info">
+            <p class="info-main">Story/Screenplay Badge</p>
+            <p class="info-sub">Many people like the story and screenplay of this movie.</p>
+          </div>
+        </section>
+
+			</article>
+
+			<article class="score-comparison">
+				<header class="section1-header">
+					<h2>Score Comparison</h2>
+					<div class="section1-header-btn">
+						<a href="./score_page.html">See Review</a>
+					</div>
+				</header>
+
+				<section class="section3-visualize">
+					<div class="score">
+						<p>User</p>
+						<img src="유저 스코어 시각화 이미지">
+          </div>
+						<div class="score">
+							<p>Critic</p>
+							<img src="전문가 스코어 시각화 이미지">
+          </div>
+							<div class="score">
+								<p>Comparison</p>
+								<img src="비교 스코어 시각화 이미지">
+          </div>
+				</section>
+			</article>
+
+			<div class="gallery-cast">
+				<article class="gallery" style="float: left;">
+					<header class="section1-header">
+						<h2>Gallery</h2>
+					</header>
+
+					<section class="section4-gallery">
+						<img class="slide-image" src="image/movie_spiderman_1.png">
+						<img class="slide-image" src="image/movie_spiderman_2.png">
+						<img class="slide-image" src="image/movie_spiderman_3.png">
+						<img class="slide-image" src="image/movie_spiderman_4.png">
+
+						<a class="slide-btn prev" onclick="plusDivs(-1)">❮</a>
+						<a class="slide-btn next" onclick="plusDivs(1)">❯</a>
+					</section>
+
+				</article>
+
+				<article class="cast-crew">
+					<header class="section1-header">
+						<h2>Cast & Crew</h2>
+					</header>
+
+					<section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_1.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Tom Holland</p>
+							<p class="info-cast">Peter Parker</p>
+						</div>
+				  </section>
+          <section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_2.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Robert Downey Jr.</p>
+							<p class="info-cast">Tony Stark</p>
+						</div>
+				  </section>
+          <section class="section5-contents">
+						<div class="section5-img">
+							<img src="image/cast_spiderman_3.png">
+            </div>
+						<div class="section5-info">
+							<p class="info-name">Zendaya Maree Stoermer Coleman</p>
+							<p class="info-cast">Michelle Jone</p>
+						</div>
+				  </section>
+				</article>
+			</div>
+
+
+		</article>
+	</div>
+	<script type="text/javascript" src="main_script.js"></script>
+
+</body>
+</html>
