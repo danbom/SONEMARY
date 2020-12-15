@@ -17,14 +17,14 @@
         <div id="username">
           <a href="my_page.html">
             Welcome, USER 
-            <img src="image/profile-user.png" />
+            <img src="image/profile-user.png"/>
           </a>
         </div>
         <nav>
           <ul id="menu-list">
-            <li><a href="genre.html"> Genre </a></li>
-            <li><a href="top10.html"> Top10 </a></li>
-            <li><a href="new.html"> New </a></li>
+            <li><a href="genre.html" id="ami"> Genre </a></li>
+            <li><a href="top10.html" id="ami"> Top10 </a></li>
+            <li><a href="new.html" id="ami"> New </a></li>
           </ul>
         </nav>
         <form id="search" onClick="location.href='search_page.html'">
@@ -47,29 +47,38 @@
       <div class="preview_box" style="display: flex; background-color: black; width: 100%;">
         <div class="left_box" style="float:left; width:50%; background-color: black;">
           <img class="slide-image" src="image/movie_spiderman_1.png" style="object-position: 5px;
-        padding: 7%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 5%;
         padding-left: 20%;
-        width: 75%;
+        width: 90%;
         height:auto;"/>
         <img class="slide-image" src="image/movie_spiderman_2.png" style="object-position: 5px;
-        padding: 7%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 5%;
         padding-left: 20%;
-        width: 75%;
+        width: 90%;
         height:auto;"/>
         <img class="slide-image" src="image/movie_spiderman_3.png" style="object-position: 5px;
-        padding: 7%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 5%;
         padding-left: 20%;
-        width: 75%;
+        width: 90%;
         height:auto;"/>
         </div>
         <div class="right_box" style="float:left; width:50%; background-color: black; color: white;
-        padding-top: 3%; padding-left : 5%; padding-right : 5%;">
-          <h1>TENET (2020)<br></h1>
-          <h2>One word for you, Tenet.
-            Don't understand and feel!
+        padding-top: 4%; padding-left : 5%; padding-right : 7%;"><a href="detail_page.html">
+          <h1 id="rightbox-text" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 35px;">Spider-Man: Homecoming
+            <br></h1>
+          <h2 id="rightbox-text" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;"><br>Marvel Heroes' Generation Change! 
+            "Do you take tests to be Avengers?"
+            
             </h2>
-          <br><br>The leader of the operation (John David Washington) deployed to stop Sator (Kennes Branner), who is trying to destroy the world by going back and forth between the present and the future through an inversion of time. We must work with Neil (Robert Pattinson), who has information about Invertson, and his wife Kat (Elizabeth Debiki), an art connoisseur and a vengeance on Sator, to stop World War III against future attacks!
+          <br><br><h3 id="rightbox-text" style="font-size: 13px;">Peter Parker" (Tom Holland) was selected by Tony Stark (Robert Downey Jr.) during the "Civil War." Tony Stark, who presented him with a new suit, advises him not to do anything dangerous. But Peter Parker, united in bluffing and justice, is trying to confront the powerful enemy, the Vulture, that threatens the world.</h3>
         </div>
+      </a>
       </div>
       
   </div>
@@ -77,10 +86,13 @@
     <article class="main-article">
       <article class="Action Movies" style="display: grid; float:left;">
         <header class="section1-header" style="margin-top:5%;">
-          <h2>Action Movies</h2>
+          <a href="genre.html">
+            <h2 class="section1-header">Action Movies</h2>
+          </a>
+          
         </header>
         <div class="section1-header-btn" style="margin-left: auto; padding : 2%;">
-          <a href="search_page.html"> View more </a>
+          <a href="search_page.html" id="ami"> View more </a>
         </div>
         
         <!-- 영화 목록 1 -->
@@ -201,10 +213,11 @@
 
       <article class="New Movies" style="display: grid; float:left;">
         <header class="section1-header"  style="margin-top:5%;">
-          <h2>New Movies</h2>
+          <a href="new.html"><h2 class="section1-header">New Movies</h2></a>
+          
         </header>
         <div class="section1-header-btn" style="margin-left: auto; padding : 2%;">
-          <a href="search_page.html"> View more </a>
+          <a href="search_page.html" id="ami"> View more </a>
         </div>
 
 
