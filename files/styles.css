@@ -95,6 +95,10 @@ footer {
   background: none;
 }
 
+#ami:hover {COLOR: #6c63ff;}
+#ami {font-weight: bold;}
+
+#rightbox-text {COLOR: white;}
 
 /* 메인 부분 */
 .main-article {
@@ -107,9 +111,7 @@ footer {
 /* 메인: 섹션1 영화 */
 /* 섹션1: 헤더 */
 .section1-header {
-  /*margin: 10px;
-  margin-top: 50px;*/
-  /*margin-bottom: 30px;*/
+  color:#303030
 }
 .section1-header::first-letter {
   color: #6c63ff;
@@ -566,6 +568,9 @@ a.signin:active {
   clear: both;
 }
 
+.search-key h3, h1 {
+  display: inline-block;
+}
 .search-list {
   display: flex;
 }
@@ -574,5 +579,23 @@ a.signin:active {
   flex-direction: column;
   width: 150px;
   height: 310px;
-  margin : 5px;
+  margin : 15px;
 }
+.search-list-std {
+  float: left;
+  font-size: 13px;
+}
+.search-list-score {
+  float: right;
+  margin: 2px;
+  font-size: 12px;
+  font-weight: weight;
+}
+
+#key {
+  margin-left: 10px;
+}
+/*
+.abcd {
+  border: 1px solid red;
+} */

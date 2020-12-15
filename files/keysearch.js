@@ -1,10 +1,10 @@
-//영화 목록 임시 데이터 (영화: 제목, 포스터이미지, top평가항목, 점수)
+//영화 목록 임시 데이터 (영화: 제목, 포스터이미지, top평가항목, 점수, 상세페이지)
 const movies = [
-  {title: 'Spider-Man: Homecoming', poster: 'image/movie_spiderman_poster.jpg'},
-  {title: 'Spider-Man: Far From Home', poster: 'image/poster_spiderman.png'},
-  {title: 'Terminator: Dark Fate', poster: 'image/movie_terminator_poster.png'},
-  {title: 'Princess Mononoke', poster: 'image/movie_mononoke_poster.png'},
-  {title: 'Frozen', poster: 'image/movie_frozen_poster.png'}
+  {title: 'Spider-Man: Homecoming', poster: 'image/movie_spiderman_poster.jpg', std: 'Story', score: '7', page: 'detail_page.html'},
+  {title: 'Spider-Man: Far From Home', poster: 'image/poster_spiderman.png', std: 'Acting', score: '8', page: 'detail_page.html'},
+  {title: 'Terminator: Dark Fate', poster: 'image/movie_terminator_poster.png', std: 'Story', score: '9', page: 'detail_page.html'},
+  {title: 'Princess Mononoke', poster: 'image/movie_mononoke_poster.png', std: 'Story', score: '10', page: 'detail_page.html'},
+  {title: 'Frozen', poster: 'image/movie_frozen_poster.png', std: 'Story', score: '8', page: 'detail_page.html'}
 ]
 
 const list = document.getElementById('list');
@@ -13,19 +13,30 @@ const key = document.getElementById('key');
 function setList(group) {
   clearList();
   for (const movie of group) {
-    const item = document.createElement('li');
+    var item = document.createElement('li');
     item.classList.add('list-group-item');
 
     var img = document.createElement('img');
     img.src = movie.poster;
     img.className="section6-img";
 
-    item.appendChild(img);
+    var title = document.createElement('h4');
+    title.innerHTML = movie.title;
+    var std = document.createElement('div');
+    std.innerHTML = movie.std;
+    std.className = "search-list-std";
+    var score = document.createElement('div');
+    score.innerHTML = movie.score;
+    score.className = "search-list-score";
 
-    const title = document.createTextNode(movie.title);
-    item.appendChild(title);
+    var link = document.createElement('a');
+    link.setAttribute('href', movie.page);
 
-    //item.className="section6-contents";
+    link.appendChild(img);
+    link.appendChild(title);
+    link.appendChild(std);
+    link.appendChild(score);
+    item.appendChild(link);
     list.appendChild(item);
   }
   if (group.length === 0){
