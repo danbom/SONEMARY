@@ -95,6 +95,10 @@ footer {
   background: none;
 }
 
+#ami:hover {COLOR: #6c63ff;}
+#ami {font-weight: bold;}
+
+#rightbox-text {COLOR: white;}
 
 /* 메인 부분 */
 .main-article {
@@ -107,9 +111,7 @@ footer {
 /* 메인: 섹션1 영화 */
 /* 섹션1: 헤더 */
 .section1-header {
-  /*margin: 10px;
-  margin-top: 50px;*/
-  /*margin-bottom: 30px;*/
+  color:#303030
 }
 .section1-header::first-letter {
   color: #6c63ff;
