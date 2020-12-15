@@ -1,20 +1,31 @@
+//영화 목록 임시 데이터 (영화: 제목, 포스터이미지, top평가항목, 점수)
 const movies = [
-  {title: 'Spider-Man: Homecoming'},
-  {title: 'Spider-Man: Far From Home'},
-  {title: 'Terminator: Dark Fate'},
-  {title: 'Princess Mononoke'},
-  {title: 'Frozen'}
+  {title: 'Spider-Man: Homecoming', poster: 'image/movie_spiderman_poster.jpg'},
+  {title: 'Spider-Man: Far From Home', poster: 'image/poster_spiderman.png'},
+  {title: 'Terminator: Dark Fate', poster: 'image/movie_terminator_poster.png'},
+  {title: 'Princess Mononoke', poster: 'image/movie_mononoke_poster.png'},
+  {title: 'Frozen', poster: 'image/movie_frozen_poster.png'}
 ]
 
 const list = document.getElementById('list');
+const key = document.getElementById('key');
 
 function setList(group) {
   clearList();
-  for (const moive of group) {
+  for (const movie of group) {
     const item = document.createElement('li');
     item.classList.add('list-group-item');
-    const text = document.createTextNode(moive.title);
-    item.appendChild(text);
+
+    var img = document.createElement('img');
+    img.src = movie.poster;
+    img.className="section6-img";
+
+    item.appendChild(img);
+
+    const title = document.createTextNode(movie.title);
+    item.appendChild(title);
+
+    //item.className="section6-contents";
     list.appendChild(item);
   }
   if (group.length === 0){
@@ -36,6 +47,11 @@ function setNoResults() {
   list.appendChild(item);
 }
 
+function printKey(key) {
+  var str = document.getElementById("key");
+  str.innerHTML = key;
+}
+
 function computeRelevancy(title, searchTerm) {
   let value = title.trim().toLowerCase();
   if (value === searchTerm) {
@@ -52,6 +68,7 @@ function computeRelevancy(title, searchTerm) {
 const searchInput = document.getElementById('search');
 searchInput.addEventListener('submit', (event) => {
   let value = document.getElementById('searchKey').value;
+  printKey(value);
   if (value && value.trim().length > 0) {
     value = value.trim().toLowerCase();
     setList(movies.filter(movie => {

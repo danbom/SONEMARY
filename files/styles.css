@@ -17,6 +17,25 @@ img {
 textarea {
   resize: none;
 }
+h4 {
+  margin-bottom: 20px;
+  height: 20px;
+  font-size: 13px;
+  color: #707070;
+}
+p {
+  margin: 5px 0px;
+  font-size: 12px;
+  color: black;
+}
+footer {
+  clear: both;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  /* border-top: 1px solid black;  */
+}
+
 
 /* 전체 헤더 */
 #main-header {
@@ -75,6 +94,7 @@ textarea {
   background: none;
 }
 
+
 /* 메인 부분 */
 .main-article {
   display: flex;
@@ -86,8 +106,9 @@ textarea {
 /* 메인: 섹션1 영화 */
 /* 섹션1: 헤더 */
 .section1-header {
-  margin: 10px;
-  margin-bottom: 50px;
+  /*margin: 10px;
+  margin-top: 50px;*/
+  /*margin-bottom: 30px;*/
 }
 .section1-header::first-letter {
   color: #6c63ff;
@@ -251,6 +272,92 @@ textarea {
   color: #707070;
 }
 
+/* 섹션6: 메인페이지 영화 목록1 가로형 */
+.section6 {
+  height: 340px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.section6::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* 섹션6: 내용 */
+.section6-contents {
+  margin: 10px 8px;
+  display: inline-block;
+}
+/* 섹션6: 위 포스터 */
+.section6-img {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+/* 섹션6: 아래 정보 */
+.section6-info {
+  width: 150px;
+  height: 40px;
+}
+.section6-info h4 {
+  margin-bottom: 20px;
+  height: 20px;
+  font-size: 13px;
+  color: #707070;
+}
+.section6-score {
+  display: flex;
+  justify-content: space-between;
+}
+.section6-score p {
+  display: inline;
+}
+
+#preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 섹션7: 메인페이지 영화 목록2 세로형 */
+.section7 {
+  margin: 15px 10px;
+  display: block;
+}
+.section7-contents {
+  display: flex;
+  height: 200px;
+  margin-bottom: 20px;
+}
+/* 섹션7: 왼쪽 포스터 */
+.section7-img {
+  width: 130px;
+  height: auto;
+  margin-right: 15px;
+}
+.section7-info {
+  display: grid;
+  padding: 2px 10px;
+}
+.section7-info .info-details {
+  margin: 10px 0px;
+}
+.info-badge {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0px;
+}
+.info-review {
+  margin-top: 40px;
+  font-size: 13px;
+}
+.info-review::first-letter {
+  color: #6c63ff;
+}
+.section7-score {
+  margin-left: auto;
+}
 
 /* 리뷰 작성 */
 .user-review {
@@ -275,9 +382,10 @@ textarea {
 .evaluation-standard {
   background-color: #bcbcbcc0;
   border-radius: 30px;
-  width: 440px;
+  width: 350px;
   height: 50px;
   margin: 10px;
+  display: flex;
 }
 .evaluation {
   display: inline-block;
@@ -285,6 +393,10 @@ textarea {
 .criteria {
   font-weight: bold;
   color: #303030;
+  margin: 12px 20px;
+  flex-grow: 1;
+}
+.scoreInput {
   margin: 12px 20px;
 }
 .submit-cancel {
@@ -312,6 +424,9 @@ textarea {
   width: 130px;
   height: 30px;
 }
+.submit-button {
+  display: inline-block;
+}
 #submit {
   border: 2px solid #6c63ff;
   border-radius: 20px;
@@ -321,6 +436,22 @@ textarea {
   width: 130px;
   height: 35px;
   font-weight: bold;
+  cursor: pointer;
+}
+fieldset {
+  border: none;
+}
+input[type=number] {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+}
+.evaluation-standard h4 {
+  font-size: 16px;
+  display: inline;
 }
 
 
@@ -386,4 +517,61 @@ a.signin:active {
 }
 .login-button button:hover {
   opacity: 1;
+}
+
+.score-color {
+  color:#6c63ff;
+  font-weight: bold;
+}
+
+/* 서치 페이지 - 카테고리별 보기, 필터순 정렬 */
+.search-key {
+  margin-bottom: 30px;
+}
+.search-box {
+  padding: 15px 10px;
+}
+.search-form {
+  height: 20px;
+  align-content: center;
+}
+.category-section {
+  padding: 15px 10px;
+}
+.category-box {
+  text-align: center;
+  margin-bottom: 40px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+.category-box h4 {
+  display: inline-block;
+  margin: 10px 40px;
+}
+.filter-box {
+  height: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.filter-box p {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.search-list {
+  height: 340px;
+}
+.clear {
+  clear: both;
+}
+
+.search-list {
+  display: flex;
+}
+.search-list li {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 310px;
+  margin : 5px;
 }
