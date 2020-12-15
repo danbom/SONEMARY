@@ -568,6 +568,9 @@ a.signin:active {
   clear: both;
 }
 
+.search-key h3, h1 {
+  display: inline-block;
+}
 .search-list {
   display: flex;
 }
@@ -589,6 +592,9 @@ a.signin:active {
   font-weight: weight;
 }
 
+#key {
+  margin-left: 10px;
+}
 /*
 .abcd {
   border: 1px solid red;
