@@ -385,10 +385,9 @@ footer {
 
 /* 리뷰 작성 */
 .user-review {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .review-form {
   margin-right: 30px;
@@ -398,17 +397,19 @@ footer {
   border: 2px solid #9c9c9c;
   border-radius: 15px;
   outline: none;
-  padding: 30px;
+  padding: 10px;
 }
 .score-form {
   float: left;
 }
 .evaluation-standard {
-  background-color: #bcbcbcc0;
+  border: 1px solid #6c63ff;
+  background-color: #6b63ff2c;
   border-radius: 30px;
-  width: 350px;
-  height: 50px;
+  width: 500px;
+  height: 40px;
   margin: 10px;
+  margin-bottom: 10px;
   display: flex;
 }
 .evaluation {
@@ -417,11 +418,11 @@ footer {
 .criteria {
   font-weight: bold;
   color: #303030;
-  margin: 12px 20px;
+  margin: 8px 20px;
   flex-grow: 1;
 }
 .scoreInput {
-  margin: 12px 20px;
+  margin: 8px 20px;
 }
 .submit-cancel {
   margin: 20px;
@@ -612,14 +613,3 @@ a.signin:active {
   font-size: 12px;
   font-weight: weight;
 }
-
-<<<<<<< HEAD
-=======
-#key {
-  margin-left: 10px;
-}
-/*
-.abcd {
-  border: 1px solid red;
-} */
->>>>>>> origin/main
