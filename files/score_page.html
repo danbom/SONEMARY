@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Sonemary</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8" />
+    <meta name="description" content="Sonemary main page" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="styles.css?after234452232f22" />
 </head>
 
 <body>
@@ -19,9 +21,9 @@
       </div>
 				<nav>
 					<ul id="menu-list">
-						<li><a href=""> Genre </a></li>
-						<li><a href=""> Top10 </a></li>
-						<li><a href=""> New </a></li>
+						<li><a href="genre.html" id="ami"> Genre </a></li>
+						<li><a href="top10.html" id="ami"> Top10 </a></li>
+						<li><a href="new.html" id="ami"> New </a></li>
 					</ul>
 				</nav>
 				<form id="search" onClick="location.href='search_page.html'">
@@ -32,10 +34,6 @@
 
 		<article class="main-article">
 
-			<header class="section1-header">
-				<h1>Write your Review</h1>
-			</header>
-
 			<article class="sectoin1-contents">
 				<div class="section1-info" style="float: left;">
 					<div class="info-title" style="font-weight: bold">
@@ -45,12 +43,15 @@
 						Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
 					</div>
 					<section class="visualize-gallery">
-						<img class="slide-image" src="image/score_user.png">
-						<img class="slide-image" src="image/score_critic.png">
-						<img class="slide-image" src="image/score_comparison.png">
 
-						<a class="slide-btn prev" style="top: 100%;" onclick="plusDivs(-1)">❮</a>
-						<a class="slide-btn next" style="top: 100%;" onclick="plusDivs(1)">❯</a>
+						<div class="section7-contents">
+							<div class="section4-score">
+								<div class="graph">
+									<canvas id="myChart" style="width:200px; height:200px;"></canvas>
+								  </div>
+				  </div>
+				</div>
+
 					</section>
 				</div>
 				<div class="section1-img" style="float: right;">
@@ -109,8 +110,39 @@
 
       </article>
 
-    </article>
+	</article>
+	
+	<div class="footer">
+		<div class="footer_box" style="display: flex; background-color: black; color: white; width: 100%; text-align: left; vertical-align: middle; padding-top:5%; padding-bottom:5%; padding-left:5%">
+		  <div class="left_box" style="float:left; width:50%; background-color: black; color: white;">
+			<h3>SONEMARY<br></h3>
+			<h4>2020 Open Software Platform Team8</h4>
+		  </div>
+		  <div class="center_box" style="float:left; width:50%; background-color: black; color: white;">
+			SITE<br><br>
+			<h4 id="site-define">Main<br></h4>
+			<h4 id="site-define">Genre<br></h4>
+			<h4 id="site-define">Top10<br></h4>
+			<h4 id="site-define">New<br></h4>
+			<h4 id="site-define">My<br></h4>
+		  </div>
+		  <div class="right_box" style="float:left; width:50%; background-color: black; color: white;">
+		CONTECT<br><br>
+		DEVELPED BY<br><br>
+		<h4 id="site-define">
+		  Eunyoung (danbom)<br>
+		  Sunwoo (mallang7)<br>
+		  MinA (Ming)<br>
+		  Seoyoung (dltjdud808)
+		</h4>
+		
+		</div>
+		</div>
+		
 	</div>
-  <script type="text/javascript" src="main_script.js"></script>
+
+	</div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="score_script.js"></script>
 </body>
 </html>
