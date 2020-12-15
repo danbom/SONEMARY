@@ -560,3 +560,14 @@ a.signin:active {
 .clear {
   clear: both;
 }
+
+/* 데이터 시각화 그래프 */
+.chart-container {
+  position: relative;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+canvas {
+  border: 1px dotted red;
+}

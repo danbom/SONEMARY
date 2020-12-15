@@ -43,45 +43,51 @@ var ctx = document.getElementById("myChart");
 - ctx를 첫번째 argument로 넘겨주고, 
 - 두번째 argument로 그림을 그릴때 필요한 요소들을 모두 넘겨줍니다. 
 */
+var Chart = require('chart.js');
+
+
+var data = {
+  labels: ["S", "M", "V", "A", "G", "E"],
+  datasets: [
+        {
+            label: "User",
+            data: [8, 6, 10, 2, 7, 5],
+            backgroundColor: [
+                "rgba(255, 99, 132, 0.2)"
+            ],
+            borderColor: [
+                "rgba(255, 99, 132, 1)"
+            ],
+            borderWidth: 1,
+        },
+        {
+            label: "Critic",
+            data: [6, 7, 8, 3, 9, 4],
+            backgroundColor: [
+                "rgba(75, 192, 192, 0.2)"
+            ],
+            borderColor: [
+                "rgba(75, 192, 192, 1)"
+            ],
+            borderWidth: 1,
+        },
+  ],
+}
+
+var options = {
+  scale: {
+    angleLines: {
+      display: false,
+    },
+    ticks: {
+      suggestedMin: 0,
+      suggestedMax: 10,
+    },
+  },
+}
 
 var myChart = new Chart(ctx, {
   type: "radar",
-  data: {
-    labels: ["S", "M", "V", "A", "G", "E"],
-    datasets: [
-          {
-              label: "User",
-              data: [8, 6, 10, 2, 7, 5],
-              backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)"
-              ],
-              borderColor: [
-                  "rgba(255, 99, 132, 1)"
-              ],
-              borderWidth: 1,
-          },
-          {
-              label: "Critic",
-              data: [6, 7, 8, 3, 9, 4],
-              backgroundColor: [
-                  "rgba(75, 192, 192, 0.2)"
-              ],
-              borderColor: [
-                  "rgba(75, 192, 192, 1)"
-              ],
-              borderWidth: 1,
-          },
-    ],
-  },
-  options: {
-    scale: {
-      angleLines: {
-        display: false,
-      },
-      ticks: {
-        suggestedMin: 0,
-        suggestedMax: 10,
-      },
-    },
-  },
+  data: data,
+  options: options
 });

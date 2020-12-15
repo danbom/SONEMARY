@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="path/to/chartjs/dist/Chart.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Sonemary main page" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
@@ -343,6 +344,41 @@
               </a>
             </div>
 
+            <div class="section7-info" style="border: 1px dotted red;">
+              <div style="border: 1px dotted red;">
+                <div class="title" style="font-size: 18px; font-weight: bold;">
+                  Spider-Man: Homecoming
+                </div>
+                <div class="info-details">
+                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
+                    2h 13m | R12</p>
+                </div>
+                <div class="info-badge">
+                  <img src="image/badge_ex.png" />
+                </div>
+              </div>
+              <div class="info-review" style="border: 1px dotted red;">
+                <a href="review_page.html"> Write your Review </a>
+              </div>
+            </div>
+
+            <div class="section7-score">
+              <div class="graph" style="width: 200px; height: 200px;">
+                <div class="chart-container">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="section7-contents">
+            <div class="section7-img">
+              <a href="detail_page.html">
+                <img src="image/movie_spiderman_poster.jpg"/>
+              </a>
+            </div>
+
             <div class="section7-info">
               <div>
                 <div class="title" style="font-size: 18px; font-weight: bold;">
@@ -362,7 +398,7 @@
             </div>
 
             <div class="section7-score">
-              <div class="graph" style="width: 150px; height: 150px;">
+              <div class="graph" style="width: 200px; height: 200px;">
                 <canvas id="myChart" width="150" height="150"></canvas>
               </div>
             </div>
@@ -395,39 +431,9 @@
 
             <div class="section7-score">
               <div class="graph" style="width: 150px; height: 150px;">
-                <canvas id="myChart" width="150" height="150"></canvas>
-              </div>
-            </div>
-          </div>
-
-          <div class="section7-contents">
-            <div class="section7-img">
-              <a href="detail_page.html">
-                <img src="image/movie_spiderman_poster.jpg"/>
-              </a>
-            </div>
-
-            <div class="section7-info">
-              <div>
-                <div class="title" style="font-size: 18px; font-weight: bold;">
-                  Spider-Man: Homecoming
+                <div class="chart-container">
+                  <canvas id="myChart"></canvas>
                 </div>
-                <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
-                    2h 13m | R12</p>
-                </div>
-                <div class="info-badge">
-                  <img src="image/badge_ex.png" />
-                </div>
-              </div>
-              <div class="info-review">
-                <a href="review_page.html"> Write your Review </a>
-              </div>
-            </div>
-
-            <div class="section7-score">
-              <div class="graph" style="width: 150px; height: 150px;">
-                <canvas id="myChart" width="150" height="150"></canvas>
               </div>
             </div>
           </div>
