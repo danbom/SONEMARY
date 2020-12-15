@@ -53,7 +53,7 @@ function clearList() {
 function setNoResults() {
   const item = document.createElement('li');
   item.classList.add('list-group-item');
-  const text = document.createTextNode('No results found😥');
+  const text = document.createTextNode('No results found');
   item.appendChild(text);
   list.appendChild(item);
 }
