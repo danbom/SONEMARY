@@ -522,3 +522,41 @@ a.signin:active {
   color:#6c63ff;
   font-weight: bold;
 }
+
+/* 서치 페이지 - 카테고리별 보기, 필터순 정렬 */
+.search-box {
+  padding: 15px 10px;
+}
+.search-form {
+  height: 20px;
+  align-content: center;
+}
+.category-section {
+  padding: 15px 10px;
+}
+.category-box {
+  text-align: center;
+  margin-bottom: 40px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+.category-box h4 {
+  display: inline-block;
+  margin: 10px 40px;
+}
+.filter-box {
+  height: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.filter-box p {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.search-list {
+  height: 340px;
+}
+.clear {
+  clear: both;
+}
