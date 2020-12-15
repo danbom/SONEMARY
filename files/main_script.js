@@ -56,10 +56,10 @@ var myChart = new Chart(ctx, {
               label: "User",
               data: [8, 6, 10, 2, 7, 5],
               backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)"
+                  "rgba(112,112,112,0.2)"
               ],
               borderColor: [
-                  "rgba(255, 99, 132, 1)"
+                  "rgba(112,112,112,1)"
               ],
               borderWidth: 1,
           },
@@ -67,10 +67,10 @@ var myChart = new Chart(ctx, {
               label: "Critic",
               data: [6, 7, 8, 3, 9, 4],
               backgroundColor: [
-                  "rgba(75, 192, 192, 0.2)"
+                  "rgba(108,99,255,0.2)"
               ],
               borderColor: [
-                  "rgba(75, 192, 192, 1)"
+                  "rgba(108,99,255,1)"
               ],
               borderWidth: 1,
           },
@@ -98,10 +98,10 @@ var myChart1 = new Chart(ctx1, {
               label: "User",
               data: [1, 6, 10, 9, 7, 5],
               backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)"
+                  "rgba(112,112,112,0.2)"
               ],
               borderColor: [
-                  "rgba(255, 99, 132, 1)"
+                  "rgba(112,112,112,1)"
               ],
               borderWidth: 1,
           },
@@ -109,10 +109,10 @@ var myChart1 = new Chart(ctx1, {
               label: "Critic",
               data: [6, 7, 1, 3, 9, 9],
               backgroundColor: [
-                  "rgba(75, 192, 192, 0.2)"
+                  "rgba(108,99,255,0.2)"
               ],
               borderColor: [
-                  "rgba(75, 192, 192, 1)"
+                  "rgba(108,99,255,1)"
               ],
               borderWidth: 1,
           },
@@ -140,10 +140,10 @@ var myChart2 = new Chart(ctx2, {
               label: "User",
               data: [8, 6, 1, 2, 1, 5],
               backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)"
+                  "rgba(112,112,112,0.2)"
               ],
               borderColor: [
-                  "rgba(255, 99, 132, 1)"
+                  "rgba(112,112,112,1)"
               ],
               borderWidth: 1,
           },
@@ -151,10 +151,10 @@ var myChart2 = new Chart(ctx2, {
               label: "Critic",
               data: [6, 4, 8, 3, 1, 4],
               backgroundColor: [
-                  "rgba(75, 192, 192, 0.2)"
+                  "rgba(108,99,255,0.2)"
               ],
               borderColor: [
-                  "rgba(75, 192, 192, 1)"
+                  "rgba(108,99,255,1)"
               ],
               borderWidth: 1,
           },
@@ -182,10 +182,10 @@ var myChart3 = new Chart(ctx3, {
               label: "User",
               data: [2, 2, 10, 2, 2, 5],
               backgroundColor: [
-                  "rgba(255, 99, 132, 0.2)"
+                  "rgba(112,112,112,0.2)"
               ],
               borderColor: [
-                  "rgba(255, 99, 132, 1)"
+                  "rgba(112,112,112,1)"
               ],
               borderWidth: 1,
           },
@@ -193,10 +193,10 @@ var myChart3 = new Chart(ctx3, {
               label: "Critic",
               data: [1, 2, 3, 4, 5, 4],
               backgroundColor: [
-                  "rgba(75, 192, 192, 0.2)"
+                  "rgba(108,99,255,0.2)"
               ],
               borderColor: [
-                  "rgba(75, 192, 192, 1)"
+                  "rgba(108,99,255,1)"
               ],
               borderWidth: 1,
           },

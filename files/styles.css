@@ -131,8 +131,7 @@ footer {
 /* 내용: 좌측 이미지 */
 .section1-img {
   float: left;
-  width: 700px;
-  height: 400px;
+  width: 60%;
   margin: 10px;
 }
 /* 내용: 우측 정보 */
@@ -142,7 +141,7 @@ footer {
   padding: 10px;
 }
 .info-title {
-  font-size: 25px;
+  font-size: 27px;
 }
 .info-details {
   margin: 20px 0px;
@@ -193,7 +192,7 @@ footer {
 }
 
 .info-main {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .info-sub {
