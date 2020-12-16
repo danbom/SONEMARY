@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Sonemary main page" />
+	<meta name="keywords" content="HTML5, CSS3, JavaScript" />
+	<title>SONEMARY</title>
+	<link rel="stylesheet" href="styles.css?after234452232f22" />
+</head>
+
+<body>
+	<div id="app">
+		<header id="main-header">
+			<div id="logo">
+				<a href="main_page.php"><img src="image/SONEMARY.png" /></a>
+			</div>
+			<div id="username">
+				<a href="my_page.html">
+					Welcome, USER
+					<img src="image/profile-user.png" />
+				</a>
+			</div>
+			<nav>
+				<ul id="menu-list">
+					<li><a href="genre.php" id="ami"> Genre </a></li>
+					<li><a href="top10.php" id="ami"> Top10 </a></li>
+					<li><a href="new.php" id="ami"> New </a></li>
+				</ul>
+			</nav>
+
+			<form id="search" onClick="location.href='search_page.php'">
+				<input type="text" id="searchKey" name="searchKey" placeholder="search...">
+				<button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
+			</form>
+
+		</header>
+
+	</div>
+
+	<article class="main-article" style="padding-bottom: 2%;">
+
+		<article class="overview">
+			<header class="section1-header">
+				<h2>Overview</h2>
+				<div class="section1-header-btn">
+					<a href="./review_page.html" id="ami">Write your Review</a>
+				</div>
+			</header>
+			<section class="section1-contents" style="padding-top:2%;">
+				<div class="section1-img">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kVrqfYjkTdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="section1-info">
+					<div class="info-title">
+						<h1>Titanic</h1>
+					</div>
+					<div class="info-details">
+						<div style="font-weight: bold">
+							Romance, Drama | English | 1998
+						</div>
+						<div>
+							<span>Director</span><span>Robert Wise</span>
+							<br>
+							<span>Release date</span><span>1998-02-20</span>
+							<br>
+							<span>Country</span><span>USA</span>
+							<br>
+							<span>Running time</span><span>3h 14m</span>
+						</div>
+						<div>
+						Jack (Leonardo DiCaprio), a free-spirited painter who got a ticket by chance and boarded the Titanic, fell in love with Rose (Kate Winslet) who boarded the first-class room with his fiancé of great wealth. Rose, who dreamed of true love, was also in ecstasy for the first time in her life, and they fell in love like destiny.
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</article>
+
+	<article class="badge-article" style="padding-bottom: 6%;">
+		<header class="section1-header">
+			<h2>Badge</h2>
+		</header>
+
+		<section class="section2-contents">
+			<div class="section2-img badge">
+				<img src="image/badge_sound.png" style="margin-top: 5px;">
+			</div>
+			<div class="section2-info">
+				<p class="info-main">Sound Badge</p>
+				<p class="info-sub">Many people like the sound of this movie.</p>
+			</div>
+		</section>
+
+		<section class="section2-contents">
+			<div class="section2-img badge">
+				<img src="image/badge_highcritic.png" style="margin-top: 5px;">
+			</div>
+			<div class="section2-info">
+				<p class="info-main">High Critic Score Badge</p>
+				<p class="info-sub">Many critics give high score to this movie.</p>
+			</div>
+		</section>
+
+	</article>
+
+	<article class="main-article" style="margin-bottom:8%">
+		<article class="score-comparison">
+			<header class="section1-header">
+				<h2 style="margin-bottom: 15px;">Score Comparison</h2>
+				<div class="section1-header-btn">
+					<a href="./score_page.html" id="ami">See Review</a>
+				</div>
+			</header>
+
+			<div class="section7-contents">
+				<div class="section4-score">
+					<p style="font-size: 14px; text-align: center; padding:1%">User</p>
+					<div class="graph">
+						<canvas id="myChart" style="width:200px; height:200px;"></canvas>
+					</div>
+				</div>
+				<div class="section4-score">
+					<p style="font-size: 14px; text-align: center; padding:1%">Critic</p>
+					<div class="graph">
+						<canvas id="myChart1" style="width:200px; height:200px;"></canvas>
+					</div>
+				</div>
+				<div class="section4-score">
+					<p style="font-size: 14px; text-align: center; padding:1%">Comparison</p>
+					<div class="graph">
+						<canvas id="myChart2" style="width:200px; height:200px;"></canvas>
+					</div>
+				</div>
+			</div>
+		</article>
+	</article>
+
+
+	<article class="main-article" style="display: flex">
+		<div class="gallery-cast">
+			<article class="gallery" style="float: left;">
+				<header class="section1-header">
+					<h2>Gallery</h2>
+				</header>
+
+				<section class="section4-gallery">
+					<img class="slide-image" src="https://movie-phinf.pstatic.net/20171227_15/1514337346439GEtpb_JPEG/movie_image.jpg?type=m665_443_2">
+					<img class="slide-image" src="https://movie-phinf.pstatic.net/20171227_153/1514337346192tx0on_JPEG/movie_image.jpg?type=m665_443_2">
+					<img class="slide-image" src="https://movie-phinf.pstatic.net/20171227_196/1514337346074N3mWh_JPEG/movie_image.jpg?type=m665_443_2">
+					<img class="slide-image" src="https://movie-phinf.pstatic.net/20171227_87/1514337346842bz7fG_JPEG/movie_image.jpg?type=m665_443_2">
+
+					<a class="slide-btn prev" onclick="plusDivs(-1)">❮</a>
+					<a class="slide-btn next" onclick="plusDivs(1)">❯</a>
+				</section>
+
+			</article>
+
+			<article class="cast-crew" style="margin-bottom: 20%;">
+				<header class="section1-header">
+					<h2 style="margin-bottom:50px">Cast & Crew</h2>
+				</header>
+
+				<section class="section5-contents">
+					<a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=922">
+						<div class="section5-img">
+							<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F102%2F202001281610302151.jpg&type=u111_139&quality=95">
+						</div>
+						<div class="section5-info">
+							<p class="info-name">Leonardo Dicaprio</p>
+							<p class="info-cast">Jack Dawson</p>
+						</div>
+					</a>
+				</section>
+				<section class="section5-contents">
+					<a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=837">
+						<div class="section5-img">
+							<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F61%2F201612291744255321.jpg&type=u111_139&quality=95">
+						</div>
+						<div class="section5-info">
+							<p class="info-name">Kate Winslet</p>
+							<p class="info-cast">Rose Dewitt Bukater</p>
+						</div>
+					</a>
+				</section>
+			</article>
+		</div>
+
+	</article>
+
+
+
+	</article>
+
+	<div class="footer">
+		<div class="footer_box"
+			style="display: flex; background-color: black; color: white; width: 100%; text-align: left; vertical-align: middle; padding-top:5%; padding-bottom:5%; padding-left:5%">
+			<div class="left_box" style="float:left; width:50%; background-color: black; color: white;">
+				<h3>SONEMARY<br></h3>
+				<h4>2020 Open Software Platform Team8</h4>
+
+			</div>
+			<div class="center_box" style="float:left; width:50%; background-color: black; color: white;">
+				SITE<br><br>
+				<h4 id="site-define">Main<br></h4>
+				<h4 id="site-define">Genre<br></h4>
+				<h4 id="site-define">Top10<br></h4>
+				<h4 id="site-define">New<br></h4>
+				<h4 id="site-define">My<br></h4>
+			</div>
+			<div class="right_box" style="float:left; width:50%; background-color: black; color: white;">
+				CONTECT<br><br>
+				DEVELPED BY<br><br>
+				<h4 id="site-define">
+					Eunyoung (danbom)<br>
+					Sunwoo (mallang7)<br>
+					MinA (Ming)<br>
+					Seoyoung (dltjdud808)
+				</h4>
+
+			</div>
+		</div>
+
+	</div>
+	</div>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="detail_script.js"></script>
+
+</body>
+
+</html>
