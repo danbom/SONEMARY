@@ -33,7 +33,7 @@
 		</header>
 		<?php
     include "lib.php";
-    $con=mysqli_connect("localhost","root","","sonemary");
+    $con=mysqli_connect("localhost","root","ming0","sonemary");
     mysqli_set_charset($con,"utf8");
     $res = mysqli_query($con, "select * from movies");
     $result = array();

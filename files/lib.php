@@ -6,7 +6,7 @@ ini_set("display_errors",1);
 
 $host = 'localhost';
 $user = 'root';
-$pw = 'min01038082726!';
+$pw = 'ming0';
 $dbName = 'sonemary';
 
 $connect =mysqli_connect($host, $user, $pw, $dbName);

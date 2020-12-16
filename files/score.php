@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "1234", "test");
+$conn = mysqli_connect("localhost", "root", "ming0", "sonemary");
 
 $sql = "SELECT ROUND(AVG(rank_1), 1) as avg1, ROUND(AVG(rank_2), 1) as avg2,
               ROUND(AVG(rank_3), 1) as avg3, ROUND(AVG(rank_4), 1) as avg4,
