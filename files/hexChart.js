@@ -3,10 +3,6 @@
 
 
 $(document).ready(function(){
-  showGraph();
-});
-
-function showGraph(){
   $.ajax({
     url: "score.php",
     type: "GET",
@@ -66,16 +62,17 @@ function showGraph(){
       
       var ctx = document.getElementById("myChart");
 
-      var myChart = new Chart(ctx, {
+      new Chart(ctx, {
         type:"radar",
-        data: chartdata,
+        data: chartData,
         options: options
       });
 
     },
     error: function(data){}
   });
-};
+});
+
 
 // function showGraph(){
 //   $.post("review.php", function(data){
