@@ -33,12 +33,11 @@
 		<article class="main-article">
 		<div class="search-list-section">
 			<header class="search-key">
-				Results for <h1 id="key"><?php $home=file_get_contents("search_page2.php"); ?>🤷‍♀️?</h1>
+				Results for <h1 id="key">🤷‍♀️?</h1>
 			</header>
 
 			<section >
 				<ul class="search-list" id="list"></ul>
-
 
 				<?php
 				$con=mysqli_connect("localhost","root","","sonemary");
@@ -50,17 +49,98 @@
 				 'genre'=>$row[3],'director'=>$row[4],'cast'=>$row[5],'poster'=>$row[6],
 				 'page'=>$row[7],'badge'=>$row[8]));
 				}
-				$movies = json_encode(array($result),JSON_UNESCAPED_UNICODE);
-				echo $movies;
 				mysqli_close($con);
 
 				?>
-				<script src="keysearch2.js">
-					const movies_j = <?php echo json_encode(array("result"=>$result),JSON_UNESCAPED_UNICODE); ?>;
+				<script language="JavaScript">
+					var movies = <?php echo json_encode(array($result),JSON_UNESCAPED_UNICODE); ?>;
+					var movies = movies[0];
+					const list = document.getElementById('list');
+					const key = document.getElementById('key');
+
+					function setList(group) {
+					  clearList();
+					  for (const movie of group) {
+					    var item = document.createElement('li');
+					    item.classList.add('list-group-item');
+
+					    var img = document.createElement('img');
+					    img.src = movie.poster;
+					    img.className="section6-img";
+
+					    var title = document.createElement('h4');
+					    title.innerHTML = movie.title;
+
+					    var link = document.createElement('a');
+					    link.setAttribute('href', movie.page);
+
+					    link.appendChild(img);
+					    link.appendChild(title);
+					    item.appendChild(link);
+					    list.appendChild(item);
+					  }
+					  if (group.length === 0){
+					    setNoResults();
+					  }
+					}
+
+					function clearList() {
+					  while (list.firstChild) {
+					    list.removeChild(list.firstChild);
+					  }
+					}
+
+					function setNoResults() {
+					  const item = document.createElement('li');
+					  item.classList.add('list-group-item');
+					  const text = document.createTextNode('No results found');
+					  item.appendChild(text);
+					  list.appendChild(item);
+					}
+
+					function printKey(key) {
+					  var str = document.getElementById("key");
+					  str.removeChild(str.firstChild);
+					  str.appendChild(document.createTextNode(key));
+					}
+
+					function computeRelevancy(title, searchTerm) {
+					  let value = title.trim().toLowerCase();
+					  if (value === searchTerm) {
+					    return 2;
+					  } else if (value.startsWith(searchTerm)) {
+					    return 1;
+					  } else if (value.includes(searchTerm)) {
+					    return 0;
+					  } else {
+					    return -1;
+					  }
+					}
+
+					const searchInput = document.getElementById('search');
+					searchInput.addEventListener('submit', (event) => {
+					  event.preventDefault();
+					  let value = document.getElementById('searchKey').value;
+					  printKey(value);
+
+					  if (value && value.trim().length > 0) {
+					    value = value.trim().toLowerCase();
+							setList(movies.filter(movie => {
+					      return movie.title.toLowerCase().includes(value);
+					    }).sort((movie1, movie2) => {
+					      return computeRelevancy(movie2.title, value) - computeRelevancy(movie1.title, value);
+					    }));
+					  } else {
+					    clearList();
+					  }
+					});
+
+					function init() {
+					  document.getElementById('searchKey').focus();
+					}
+
 				</script>
 
-				<!-- <script src="keysearch2.js">
-				</script> -->
 
 			</section>
 		</article>
