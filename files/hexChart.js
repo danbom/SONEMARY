@@ -1,39 +1,29 @@
 // 메인 페이지 영화 목록 2, 상세 페이지 Score
 // 육각형 그래프
 
-var options = {
-  scale: {
-      angleLines: {
-      display: false,
-      },
-      ticks: {
-      suggestedMin: 0,
-      suggestedMax: 10,
-      },
-  }
-}
 
 $(document).ready(function(){
   showGraph();
-})
+});
 
 function showGraph(){
   $.ajax({
-    url: "write_review.php",
+    url: "score.php",
     type: "GET",
     success: function(data){
       console.log(data);
 
       var userData = [];
 
-      userData.push(data[0].avg1);
-      userData.push(data[0].avg2);
-      userData.push(data[0].avg3);
-      userData.push(data[0].avg4);
-      userData.push(data[0].avg5);
-      userData.push(data[0].avg6);
-
-
+      for(var i in data){
+        userData.push(data[i].avg1);
+        userData.push(data[i].avg2);
+        userData.push(data[i].avg3);
+        userData.push(data[i].avg4);
+        userData.push(data[i].avg5);
+        userData.push(data[i].avg6);
+      }
+      
       var chartData = {
         labels: ["S", "M", "V", "A", "G", "E"],
         datasets: [
@@ -62,6 +52,18 @@ function showGraph(){
         ],
       };
 
+      var options = {
+        scale: {
+            angleLines: {
+            display: false,
+            },
+            ticks: {
+            suggestedMin: 0,
+            suggestedMax: 10,
+            },
+        }
+      }
+      
       var ctx = document.getElementById("myChart1");
 
       var myChart = new Chart(ctx, {

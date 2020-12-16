@@ -14,7 +14,7 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
+  if(slideIndex>1)  x[slideIndex-1].style.display = "block";
 }
 
 // 메인페이지 상단 프리뷰 - 자동 슬라이드
@@ -31,6 +31,6 @@ function carousel(){
   if(previewIndex > x.length){
     previewIndex = 1;
   }
-  x[previewIndex-1].style.display = "block";
+  if(previewIndex>1)  x[previewIndex-1].style.display = "block";
   setTimeout(carousel, 2000);   // change image every 2seconds
 }
