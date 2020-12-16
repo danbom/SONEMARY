@@ -534,6 +534,6 @@
   </div>
     <script type="text/javascript" src="main_script.js"></script>
     <script type="text/javascript" src="hexChart.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
   </body>
 </html>
