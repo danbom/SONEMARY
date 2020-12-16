@@ -46,7 +46,7 @@ CREATE TABLE `review` (
 
 INSERT INTO `review` (`movie_id`, `user_id`, `rank_1`, `rank_2`, `rank_3`, `rank_4`, `rank_5`, `rank_6`, `review`, `regdate`) VALUES
 (1, 'admin', 8, 10, 7, 7, 8, 6, 'There\'s something magical about conversations that morph into songs, especially considering that the typical dancing that accompanies such skits is refreshingly truant.', '2020-12-14 08:15:39'),
-(6, 'admin', 8, 7, 10, 7, 7, 7, 'The level of detail and creativity surrounding the look of director James Cameron\'s new world is simply astonishing.', '2020-12-14 14:26:17'),
+(5, 'admin', 8, 7, 10, 7, 7, 7, 'The level of detail and creativity surrounding the look of director James Cameron\'s new world is simply astonishing.', '2020-12-14 14:26:17'),
 (5, 'admin', 6, 6, 8, 6, 7, 7, 'Overall, Avatar was really about the jaw-dropping visual effects--that\'s the great thing about it.', '2020-12-15 07:29:46'),
 (5, 'admin', 9, 6, 9, 7, 5, 4, 'Avatar tells a familiar story but its a story that works so well inside of this movie. The visuals and 3d are still one of the best to date and i totally get why it made so much money.', '2020-12-14 00:08:09'),
 (5, 'admin', 6, 7, 10, 6, 6, 6, 'This is a \'Must see\' movie, innovative, and extraordinary. I think it will be regarded by most cinema goers as another milestone in the history of the art. The level of realism achieved is remarkable, and although the film is relatively long in real time, it retains it\'s excitement and holds the audience\'s attention to the end.', '2020-12-15 15:17:49'),
