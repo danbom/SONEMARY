@@ -33,7 +33,7 @@
 		</header>
 		<?php
     include "lib.php";
-    $con=mysqli_connect("localhost","root","","sonemary");
+    $con=mysqli_connect("localhost","root","ming0","sonemary");
     mysqli_set_charset($con,"utf8");
     $res = mysqli_query($con, "select * from movies");
     $result = array();
@@ -61,8 +61,8 @@
 							</a>
 						</div>
 
-						<div class="section7-info" style="border: 1px dotted red;">
-							<div style="border: 1px dotted red;">
+						<div class="section7-info" >
+							<div >
 								<div class="title" style="font-size: 18px; font-weight: bold;">
 									<?php print_r($result[8]['title']);?>
 								</div>
@@ -74,7 +74,7 @@
 									<img src="image/badge_impact.png" />
 								</div>
 							</div>
-							<div class="info-review" style="border: 1px dotted red;">
+							<div class="info-review" >
 								<a href="review_page.html"> Write your Review </a>
 							</div>
 						</div>
@@ -94,8 +94,8 @@
 							</a>
 						</div>
 
-						<div class="section7-info" style="border: 1px dotted red;">
-							<div style="border: 1px dotted red;">
+						<div class="section7-info" >
+							<div >
 								<div class="title" style="font-size: 18px; font-weight: bold;">
 									<?php print_r($result[5]['title']);?>
 								</div>
@@ -126,8 +126,8 @@
 							</a>
 						</div>
 
-						<div class="section7-info" style="border: 1px dotted red;">
-							<div style="border: 1px dotted red;">
+						<div class="section7-info" >
+							<div >
 								<div class="title" style="font-size: 18px; font-weight: bold;">
 									<?php print_r($result[9]['title']);?>
 								</div>
@@ -158,8 +158,8 @@
 							</a>
 						</div>
 
-						<div class="section7-info" style="border: 1px dotted red;">
-							<div style="border: 1px dotted red;">
+						<div class="section7-info" >
+							<div >
 								<div class="title" style="font-size: 18px; font-weight: bold;">
 									<?php print_r($result[10]['title']);?>
 								</div>
