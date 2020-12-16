@@ -1,6 +1,7 @@
 <?php
 $id=$_POST['user_id'];
 $pw=$_POST['password'];
+$critic=$_POST['critic'];
 
 if ($id==NULL || $pw=NULL){
   ?><script type="text/javascript">
@@ -19,7 +20,7 @@ if ($result->num_rows==1){
   </script><?php
 }
 
-$sign=mysqli_query($con, "INSERT INTO user (user_id, password)"." VALUES ('".$id."','".$pw."')");
+$sign=mysqli_query($con, "INSERT INTO user (user_id, password, critic)"." VALUES ('".$id."','".$pw."','".$critic."')");
 if ($sign) {
   ?><script type="text/javascript">
     alert('signup success');
