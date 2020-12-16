@@ -73,3 +73,6 @@ Within one hexagon, you can compare the scores of professionals with those of or
 - Seoyoung (dltjdud808)
   - 이화여자대학교 컴퓨터공학과 1971033
 
+### 2. Branches
+![image](https://user-images.githubusercontent.com/52441697/102416265-d58dfd80-403c-11eb-803d-1ec7ef49adbb.png)
+![image](https://user-images.githubusercontent.com/52441697/102416265-d58dfd80-403c-11eb-803d-1ec7ef49adbb.png)
