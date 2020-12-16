@@ -17,16 +17,100 @@ function div_OnOff(v,id1,id2,id3){
   document.getElementById(id1).style.display = "block"; // 보여줌
   document.getElementById(id2).style.display = "none";
   document.getElementById(id3).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
  }
  if(v == "2"){
   document.getElementById(id2).style.display = "block"; // 보여줌
   document.getElementById(id1).style.display = "none";
   document.getElementById(id3).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
  }
  if(v == "3"){
   document.getElementById(id3).style.display = "block"; // 보여줌
   document.getElementById(id1).style.display = "none";
   document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "4"){
+  document.getElementById(id4).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "5"){
+  document.getElementById(id5).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "6"){
+  document.getElementById(id6).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "7"){
+  document.getElementById(id7).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "8"){
+  document.getElementById(id8).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+  document.getElementById(id9).style.display = "none";
+ }
+ if(v == "9"){
+  document.getElementById(id9).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id4).style.display = "none";
+  document.getElementById(id5).style.display = "none";
+  document.getElementById(id6).style.display = "none";
+  document.getElementById(id7).style.display = "none";
+  document.getElementById(id8).style.display = "none";
+  document.getElementById(id3).style.display = "none";
  }
 
 
@@ -85,16 +169,16 @@ function div_OnOff(v,id1,id2,id3){
                 </header>
                 <br>
                 <div class="checkbox_box" style="width:100%; border:1px solid darkgray; border-radius: 2em; padding: 2%; ">
-
-<input type="radio" style="padding-left: 17px;" name="genre" value="1" onclick="div_OnOff(this.value,'con1','con2','con3');" > Drama &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con1','con2','con3');"> Comedy &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con1','con2','con3');"> SF &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="4" onclick="div_OnOff(this.value,'con1','con2','con3');"> Romance &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="5" onclick="div_OnOff(this.value,'con1','con2');"> Musical &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="6" onclick="div_OnOff(this.value,'con1','con2');"> Animation &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="7" onclick="div_OnOff(this.value,'con1','con2');"> Family &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="8" onclick="div_OnOff(this.value,'con1','con2');"> Adventure &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="9" onclick="div_OnOff(this.value,'con1','con2');"> Fantasy &nbsp;&nbsp;&nbsp;
+                
+<input type="radio" style="padding-left: 17px;" name="genre" value="1" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');" > Action &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Comedy &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> SF &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="4" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Romance &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="5" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Musical &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="6" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Animation &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="7" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Family &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="8" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Adventure &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="9" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Fantasy &nbsp;&nbsp;&nbsp;
 
 
 
@@ -121,46 +205,357 @@ function div_OnOff(v,id1,id2,id3){
 				<!-- 영화 목록 2 -->
 
                 <div class="section7" id="con1" style="display:none">
-
-					<div class="section7-contents" style="padding-bottom:10%">
+					
+					<div class="section7-contents">
 						<div class="section7-img">
-							<a href="<?=$result[10]['page']?>">
-								<img src="<?=$result[10]['poster']?>"/>
+							<a href="<?=$result[11]['page']?>">
+								<img src="<?=$result[11]['poster']?>"/>
 							</a>
 						</div>
 
-						<div class="section7-info" style="padding-bottom:10%">
+						<div class="section7-info">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
-									<?php print_r($result[10]['title']);?>
+									<?php print_r($result[11]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
-										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+									<p><?php print_r($result[11]['genre']." | ".$result[11]['date']);?> <br />
+										<?php print_r($result[11]['runtime']." | ".$result[11]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
 							</div>
 						</div>
 
-					</div>
+                    </div>
+                    
+
+                    <div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[9]['page']?>">
+								<img src="<?=$result[9]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[9]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[9]['genre']." | ".$result[9]['date']);?> <br />
+										<?php print_r($result[9]['runtime']." | ".$result[9]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+
+                    <div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[5]['page']?>">
+								<img src="<?=$result[5]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[5]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[5]['genre']." | ".$result[9]['date']);?> <br />
+										<?php print_r($result[5]['runtime']." | ".$result[9]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+
+                    
+
+                </div>
+                
+                <div class="section7" id="con2" style="display:none">
+					
+					<div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[7]['page']?>">
+								<img src="<?=$result[7]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[7]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[7]['genre']." | ".$result[7]['date']);?> <br />
+										<?php print_r($result[7]['runtime']." | ".$result[7]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[6]['page']?>">
+								<img src="<?=$result[6]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[6]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[6]['genre']." | ".$result[6]['date']);?> <br />
+										<?php print_r($result[6]['runtime']." | ".$result[6]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div class="section7" id="con3" style="display:none">
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[5]['page']?>">
+								<img src="<?=$result[5]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[5]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[5]['genre']." | ".$result[5]['date']);?> <br />
+										<?php print_r($result[5]['runtime']." | ".$result[5]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[4]['page']?>">
+								<img src="<?=$result[4]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[4]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[4]['genre']." | ".$result[4]['date']);?> <br />
+										<?php print_r($result[4]['runtime']." | ".$result[4]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[9]['page']?>">
+								<img src="<?=$result[9]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[9]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[9]['genre']." | ".$result[9]['date']);?> <br />
+										<?php print_r($result[9]['runtime']." | ".$result[9]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[8]['page']?>">
+								<img src="<?=$result[8]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[8]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[8]['genre']." | ".$result[8]['date']);?> <br />
+										<?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
                 </div>
 
                 <div class="section7" id="con2" style="display:none">
+					
+					<div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[7]['page']?>">
+								<img src="<?=$result[7]['poster']?>"/>
+							</a>
+						</div>
 
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[7]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[7]['genre']." | ".$result[7]['date']);?> <br />
+										<?php print_r($result[7]['runtime']." | ".$result[7]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents">
+						<div class="section7-img">
+							<a href="<?=$result[6]['page']?>">
+								<img src="<?=$result[6]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[6]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[6]['genre']." | ".$result[6]['date']);?> <br />
+										<?php print_r($result[6]['runtime']." | ".$result[6]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div class="section7" id="con4" style="display:none">
+					
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
-							<a href="<?=$result[10]['page']?>">
-								<img src="<?=$result[10]['poster']?>"/>
+							<a href="<?=$result[2]['page']?>">
+								<img src="<?=$result[2]['poster']?>"/>
 							</a>
 						</div>
 
 						<div class="section7-info" style="padding-bottom:10%">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
-									<?php print_r($result[10]['title']);?>
+									<?php print_r($result[2]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
-										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+									<p><?php print_r($result[2]['genre']." | ".$result[2]['date']);?> <br />
+										<?php print_r($result[2]['runtime']." | ".$result[2]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[1]['page']?>">
+								<img src="<?=$result[1]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[1]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[1]['genre']." | ".$result[1]['date']);?> <br />
+										<?php print_r($result[1]['runtime']." | ".$result[1]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+                <div class="section7" id="con5" style="display:none">
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[1]['page']?>">
+								<img src="<?=$result[1]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[1]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[1]['genre']." | ".$result[1]['date']);?> <br />
+										<?php print_r($result[1]['runtime']." | ".$result[1]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[6]['page']?>">
+								<img src="<?=$result[6]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[6]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[6]['genre']." | ".$result[6]['date']);?> <br />
+										<?php print_r($result[6]['runtime']." | ".$result[6]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
@@ -181,7 +576,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
@@ -194,22 +589,22 @@ function div_OnOff(v,id1,id2,id3){
 
                 </div>
 
-                <div class="section7" id="con3" style="display:none">
-
+                <div class="section7" id="con6" style="display:none">
+					
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
-							<a href="<?=$result[10]['page']?>">
-								<img src="<?=$result[10]['poster']?>"/>
+							<a href="<?=$result[2]['page']?>">
+								<img src="<?=$result[2]['poster']?>"/>
 							</a>
 						</div>
 
 						<div class="section7-info" style="padding-bottom:10%">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
-									<?php print_r($result[10]['title']);?>
+									<?php print_r($result[2]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
-										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+									<p><?php print_r($result[2]['genre']." | ".$result[2]['date']);?> <br />
+										<?php print_r($result[2]['runtime']." | ".$result[2]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
@@ -217,6 +612,55 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[6]['page']?>">
+								<img src="<?=$result[6]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[6]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[6]['genre']." | ".$result[6]['date']);?> <br />
+										<?php print_r($result[6]['runtime']." | ".$result[6]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[7]['page']?>">
+								<img src="<?=$result[7]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[7]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[7]['genre']." | ".$result[7]['date']);?> <br />
+										<?php print_r($result[7]['runtime']." | ".$result[7]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div class="section7" id="con7" style="display:none">
 
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
@@ -239,32 +683,261 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-
-                    <div class="section7-contents" style="padding-bottom:10%">
+					
+					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
-							<a href="<?=$result[10]['page']?>">
-								<img src="<?=$result[10]['poster']?>"/>
+							<a href="<?=$result[7]['page']?>">
+								<img src="<?=$result[7]['poster']?>"/>
 							</a>
 						</div>
 
 						<div class="section7-info" style="padding-bottom:10%">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
-									<?php print_r($result[10]['title']);?>
+									<?php print_r($result[7]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
-										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+									<p><?php print_r($result[7]['genre']." | ".$result[7]['date']);?> <br />
+										<?php print_r($result[7]['runtime']." | ".$result[7]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
 							</div>
 						</div>
 
-					</div>
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[3]['page']?>">
+								<img src="<?=$result[3]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[3]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[3]['genre']." | ".$result[3]['date']);?> <br />
+										<?php print_r($result[3]['runtime']." | ".$result[3]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[1]['page']?>">
+								<img src="<?=$result[1]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[1]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[1]['genre']." | ".$result[1]['date']);?> <br />
+										<?php print_r($result[1]['runtime']." | ".$result[1]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
                 </div>
 
+                <div class="section7" id="con8" style="display:none">
 
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
 
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[7]['page']?>">
+								<img src="<?=$result[7]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[7]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[7]['genre']." | ".$result[7]['date']);?> <br />
+										<?php print_r($result[7]['runtime']." | ".$result[7]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[4]['page']?>">
+								<img src="<?=$result[4]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[4]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[4]['genre']." | ".$result[4]['date']);?> <br />
+										<?php print_r($result[4]['runtime']." | ".$result[4]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[5]['page']?>">
+								<img src="<?=$result[5]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[5]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[5]['genre']." | ".$result[5]['date']);?> <br />
+										<?php print_r($result[5]['runtime']." | ".$result[5]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="section7" id="con9" style="display:none">
+
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[6]['page']?>">
+								<img src="<?=$result[6]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[6]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[6]['genre']." | ".$result[6]['date']);?> <br />
+										<?php print_r($result[6]['runtime']." | ".$result[6]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[4]['page']?>">
+								<img src="<?=$result[4]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[4]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[4]['genre']." | ".$result[4]['date']);?> <br />
+										<?php print_r($result[4]['runtime']." | ".$result[4]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[3]['page']?>">
+								<img src="<?=$result[3]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[3]['title']);?>
+								</div>
+								<div class="info-details">
+									<p><?php print_r($result[3]['genre']." | ".$result[3]['date']);?> <br />
+										<?php print_r($result[3]['runtime']." | ".$result[3]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
 
 			</article>
     </article>
