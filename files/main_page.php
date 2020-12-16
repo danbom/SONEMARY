@@ -395,7 +395,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart5" style="width:200px; height:200px;"></canvas>
+                <canvas id="myChart" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
 
@@ -428,7 +428,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas class="myChart6" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart1" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -460,7 +460,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas class="myChart7" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart2" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -492,7 +492,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart8" style="width:200px; height:200px;"></canvas>
+                <canvas id="myChart3" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -534,6 +534,6 @@
 
   </div>
     <script type="text/javascript" src="main_script.js"></script>
-    <script type="text/javascript" src="hexChart.js"></script>
+    <script type="text/javascript" src="detail_script.js"></script>
   </body>
 </html>
