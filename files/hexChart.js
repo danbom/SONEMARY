@@ -66,12 +66,12 @@
     }
   };
   
-  var ctx1 = document.getElementById("myChart1");
-  var ctx2 = document.getElementById("myChart2");
-  var ctx3 = document.getElementById("myChart3");
-  var ctx4 = document.getElementById("myChart4");
+  var ctx5 = document.getElementById("myChart5");
+  var ctx6 = document.getElementById("myChart6");
+  var ctx7 = document.getElementById("myChart7");
+  var ctx8 = document.getElementById("myChart8");
   
-  var myChart1 = new Chart(ctx1, {
+  var myChart5 = new Chart(ctx5, {
     type:"radar",
     data: {
       labels: ["S", "M", "V", "A", "E", "G"],
@@ -102,7 +102,7 @@
     },
     options: options
   });
-  var myChart2 = new Chart(ctx2, {
+  var myChart6 = new Chart(ctx6, {
     type:"radar",
     data: {
       labels: ["S", "M", "V", "A", "E", "G"],
@@ -133,7 +133,7 @@
     },
     options: options
   });
-  var myChart3 = new Chart(ctx3, {
+  var myChart7 = new Chart(ctx7, {
     type:"radar",
     data: {
       labels: ["S", "M", "V", "A", "E", "G"],
@@ -164,7 +164,7 @@
     },
     options: options
   });
-  var myChart4 = new Chart(ctx4, {
+  var myChart8 = new Chart(ctx8, {
     type:"radar",
     data: {
       labels: ["S", "M", "V", "A", "E", "G"],
