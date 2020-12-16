@@ -3,7 +3,8 @@ $id=$_POST['user_id'];
 $pw=$_POST['password'];
 $critic=$_POST['critic'];
 
-if ($id==NULL || $pw=NULL){
+
+if ($id==NULL || $pw==NULL){
   ?><script type="text/javascript">
     alert('fill all blank');
     location.href='signup.html'
@@ -22,7 +23,7 @@ if ($result->num_rows==1){
 
 $sql = "INSERT INTO user (user_id, password, critic) VALUES ('$id','$pw','$critic')";
 $sign=mysqli_query($con, $sql);
-if (!isset($sign)) {
+if ($sign) {
   ?><script type="text/javascript">
     alert('signup success');
     location.href='login.html'
