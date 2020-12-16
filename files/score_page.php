@@ -87,6 +87,8 @@ while($data=mysqli_fetch_array($result)){
 			<img src="image/profile-user.png">
 		</div>
 		<div class="section2-info">
+
+			<div class="info-main"><?=$data[user_id]?><?=substr($data[regdate],0,10)?></div>
 			<div class="info-sub"><?=$data[review]?></div>
 			<div>
 				<ul class="info-scores">
