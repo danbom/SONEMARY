@@ -20,8 +20,9 @@ if ($result->num_rows==1){
   </script><?php
 }
 
-$sign=mysqli_query($con, "INSERT INTO user (user_id, password, critic) VALUES ('$id','$pw','$critic')");
-if ($sign) {
+$sql = "INSERT INTO user (user_id, password, critic) VALUES ('$id','$pw','$critic')";
+$sign=mysqli_query($con, $sql);
+if (!isset($sign)) {
   ?><script type="text/javascript">
     alert('signup success');
     location.href='login.html'
