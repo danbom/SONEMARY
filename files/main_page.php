@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Sonemary main page" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
@@ -531,10 +532,8 @@
       </div>
 
   </div>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script type="text/javascript" src="main_script.js"></script>
     <script type="text/javascript" src="hexChart.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </body>
 </html>
