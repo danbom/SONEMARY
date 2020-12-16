@@ -36,5 +36,5 @@ mysqli_query($connect, $sql);
 
  <meta charset="utf-8" />
  <script type="text/javascript">alert('리뷰가 작성되었습니다.');</script>
- <!-- <script>location.href='main_page.php';</script>; -->
+ <script>location.href='score_page.php';</script>;
  <meta http-equiv="refresh" content="0 url=/">
