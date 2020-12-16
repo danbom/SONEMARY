@@ -12,9 +12,8 @@ A New Movie Review Site that has changed its serialized evaluation method
 1. Introduction about SONEMARY
 2. DB design and structure
 3. FrontEnd
-4. Firebase Service 관리
-5. Page Control
-6. About US
+4. Page Control
+5. About US
 
 ------
 
@@ -60,7 +59,7 @@ Within one hexagon, you can compare the scores of professionals with those of or
 
 ------
 
-## 6. About US
+## 5. About US
 
 ### 1. Roles
 
