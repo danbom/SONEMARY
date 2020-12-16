@@ -28,7 +28,7 @@ function div_OnOff(v,id1,id2,id3){
   document.getElementById(id1).style.display = "none";
   document.getElementById(id2).style.display = "none";
  }
- 
+
 
 }
 
@@ -52,7 +52,17 @@ function div_OnOff(v,id1,id2,id3){
 				<a href="main_page.php"><img src="image/SONEMARY.png"></a>
 			</div>
 			<div id="username">
-				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
+				<?php
+				session_start();
+				if(!isset($_SESSION['user_id'])) {
+					echo "<a href=login.html>LOGIN</a>";
+				}
+				else {
+					echo "<a href=my_page.html>MY</a>";
+					echo " | ";
+					echo "<a href=logout.php>LOGOUT</a>";
+				}
+				 ?>
       </div>
 				<nav>
 					<ul id="menu-list">
@@ -75,7 +85,7 @@ function div_OnOff(v,id1,id2,id3){
                 </header>
                 <br>
                 <div class="checkbox_box" style="width:100%; border:1px solid darkgray; border-radius: 2em; padding: 2%; ">
-                
+
 <input type="radio" style="padding-left: 17px;" name="genre" value="1" onclick="div_OnOff(this.value,'con1','con2','con3');" > Drama &nbsp;&nbsp;&nbsp;
 <input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con1','con2','con3');"> Comedy &nbsp;&nbsp;&nbsp;
 <input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con1','con2','con3');"> SF &nbsp;&nbsp;&nbsp;
@@ -109,9 +119,9 @@ function div_OnOff(v,id1,id2,id3){
                 <br><br>
                 <article class="main-article">
 				<!-- 영화 목록 2 -->
-                
+
                 <div class="section7" id="con1" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -134,9 +144,9 @@ function div_OnOff(v,id1,id2,id3){
 
 					</div>
                 </div>
-                
+
                 <div class="section7" id="con2" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -158,7 +168,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -180,12 +190,12 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
-                
+
                 <div class="section7" id="con3" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -207,7 +217,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -229,7 +239,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
