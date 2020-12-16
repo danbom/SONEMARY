@@ -1,4 +1,4 @@
-<?=$result[8]['page']?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <script src="path/to/chartjs/dist/Chart.js"></script>
@@ -53,7 +53,6 @@
      'genre'=>$row[3],'director'=>$row[4],'cast'=>$row[5],'poster'=>$row[6],
      'page'=>$row[7],'badge'=>$row[8]));
     }
-    print_r($result[0]['title']);
     mysqli_close($con);
     ?>
 
@@ -380,8 +379,8 @@
                   <?php print_r($result[8]['title']);?>
                 </div>
                 <div class="info-details">
-                  <p><?php print_r($result[8]['genre']+" "+$result[8]['date']);?> <br />
-                    2h 13m | R12</p>
+                  <p><?php print_r($result[8]['genre']." | ".$result[8]['date']);?> <br />
+                  <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_impact.png" />
@@ -402,19 +401,19 @@
 
           <div class="section7-contents">
             <div class="section7-img">
-              <a href="<?=$result[8]['page']?>">
-                <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="<?=$result[5]['page']?>">
+                <img src="<?=$result[5]['poster']?>"/>
               </a>
             </div>
 
-            <div class="section7-info">
-              <div>
+            <div class="section7-info" style="border: 1px dotted red;">
+              <div style="border: 1px dotted red;">
                 <div class="title" style="font-size: 18px; font-weight: bold;">
-                  Spider-Man: Homecoming
+                  <?php print_r($result[5]['title']);?>
                 </div>
                 <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
-                    2h 13m | R12</p>
+                  <p><?php print_r($result[5]['genre']." | ".$result[5]['date']);?> <br />
+                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_manyreview.png" />
@@ -434,19 +433,19 @@
 
           <div class="section7-contents">
             <div class="section7-img">
-              <a href="<?=$result[8]['page']?>">
-                <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="<?=$result[9]['page']?>">
+                <img src="<?=$result[9]['poster']?>"/>
               </a>
             </div>
 
-            <div class="section7-info">
-              <div>
+            <div class="section7-info" style="border: 1px dotted red;">
+              <div style="border: 1px dotted red;">
                 <div class="title" style="font-size: 18px; font-weight: bold;">
-                  Spider-Man: Homecoming
+                  <?php print_r($result[9]['title']);?>
                 </div>
                 <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
-                    2h 13m | R12</p>
+                  <p><?php print_r($result[9]['genre']." | ".$result[9]['date']);?> <br />
+                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_acting.png" />
@@ -466,19 +465,19 @@
 
           <div class="section7-contents">
             <div class="section7-img">
-              <a href="<?=$result[8]['page']?>">
-                <img src="image/movie_spiderman_poster.jpg"/>
+              <a href="<?=$result[10]['page']?>">
+                <img src="<?=$result[10]['poster']?>"/>
               </a>
             </div>
 
-            <div class="section7-info">
-              <div>
+            <div class="section7-info" style="border: 1px dotted red;">
+              <div style="border: 1px dotted red;">
                 <div class="title" style="font-size: 18px; font-weight: bold;">
-                  Spider-Man: Homecoming
+                  <?php print_r($result[10]['title']);?>
                 </div>
                 <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
-                    2h 13m | R12</p>
+                  <p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_highcritic.png" />
