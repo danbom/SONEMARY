@@ -1,7 +1,5 @@
 <?php
 
-include "lib.php";
-
 $conn = mysqli_connect("localhost", "root", "1234", "test");
 
 $sql = "SELECT ROUND(AVG(rank_1), 1) as avg1, ROUND(AVG(rank_2), 1) as avg2,
@@ -17,6 +15,7 @@ foreach ($result as $row) {
 }
 
 echo $data;
+print_r($data);
 
 mysqli_close($conn);
 

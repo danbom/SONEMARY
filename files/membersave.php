@@ -19,7 +19,7 @@ session_start();
 
 <header id="main-header">
 	<div id="logo">
-		<a href="main_page.html"><img src="image/SONEMARY.png"></a>
+		<a href="main_page.php"><img src="image/SONEMARY.png"></a>
 	</div>
 	<div id="username">
 		<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
@@ -27,8 +27,8 @@ session_start();
 		<nav>
 			<ul id="menu-list">
 				<li><a href="genre.html" id="ami"> Genre </a></li>
-				<li><a href="top10.html" id="ami"> Top10 </a></li>
-				<li><a href="new.html" id="ami"> New </a></li>
+				<li><a href="top10.php" id="ami"> Top10 </a></li>
+				<li><a href="new.php" id="ami"> New </a></li>
 			</ul>
 		</nav>
 		<form id="search" onClick="location.href='search_page.html'">
