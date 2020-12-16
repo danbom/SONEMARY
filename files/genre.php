@@ -169,7 +169,7 @@ function div_OnOff(v,id1,id2,id3){
                 </header>
                 <br>
                 <div class="checkbox_box" style="width:100%; border:1px solid darkgray; border-radius: 2em; padding: 2%; ">
-                
+
 <input type="radio" style="padding-left: 17px;" name="genre" value="1" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');" > Action &nbsp;&nbsp;&nbsp;
 <input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> Comedy &nbsp;&nbsp;&nbsp;
 <input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con1','con2','con3','con4','con5','con6','con7','con8','con9');"> SF &nbsp;&nbsp;&nbsp;
@@ -205,21 +205,21 @@ function div_OnOff(v,id1,id2,id3){
 				<!-- 영화 목록 2 -->
 
                 <div class="section7" id="con1" style="display:none">
-					
+
 					<div class="section7-contents">
 						<div class="section7-img">
-							<a href="<?=$result[11]['page']?>">
-								<img src="<?=$result[11]['poster']?>"/>
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
 							</a>
 						</div>
 
 						<div class="section7-info">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
-									<?php print_r($result[11]['title']);?>
+									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[11]['genre']." | ".$result[11]['date']);?> <br />
-										<?php print_r($result[11]['runtime']." | ".$result[11]['R']);?></p>
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
@@ -227,7 +227,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                     <div class="section7-contents">
 						<div class="section7-img">
@@ -273,12 +273,12 @@ function div_OnOff(v,id1,id2,id3){
 
                     </div>
 
-                    
+
 
                 </div>
-                
+
                 <div class="section7" id="con2" style="display:none">
-					
+
 					<div class="section7-contents">
 						<div class="section7-img">
 							<a href="<?=$result[7]['page']?>">
@@ -300,7 +300,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents">
 						<div class="section7-img">
 							<a href="<?=$result[6]['page']?>">
@@ -322,12 +322,12 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
-                
+
                 <div class="section7" id="con3" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[5]['page']?>">
@@ -349,7 +349,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[4]['page']?>">
@@ -371,7 +371,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[9]['page']?>">
@@ -393,7 +393,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[8]['page']?>">
@@ -415,12 +415,12 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
 
                 <div class="section7" id="con2" style="display:none">
-					
+
 					<div class="section7-contents">
 						<div class="section7-img">
 							<a href="<?=$result[7]['page']?>">
@@ -442,7 +442,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents">
 						<div class="section7-img">
 							<a href="<?=$result[6]['page']?>">
@@ -464,12 +464,12 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
-                
+
                 <div class="section7" id="con4" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[2]['page']?>">
@@ -491,7 +491,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[1]['page']?>">
@@ -513,13 +513,13 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
-                    
+
+
 
                 </div>
 
                 <div class="section7" id="con5" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[1]['page']?>">
@@ -541,7 +541,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[6]['page']?>">
@@ -590,7 +590,7 @@ function div_OnOff(v,id1,id2,id3){
                 </div>
 
                 <div class="section7" id="con6" style="display:none">
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[2]['page']?>">
@@ -612,7 +612,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[6]['page']?>">
@@ -634,7 +634,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[7]['page']?>">
@@ -656,10 +656,10 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
-                
+
                 <div class="section7" id="con7" style="display:none">
 
                     <div class="section7-contents" style="padding-bottom:10%">
@@ -683,7 +683,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[7]['page']?>">
@@ -705,7 +705,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[3]['page']?>">
@@ -727,7 +727,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[1]['page']?>">
@@ -749,7 +749,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
 
@@ -776,7 +776,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[7]['page']?>">
@@ -798,7 +798,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[4]['page']?>">
@@ -820,7 +820,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[5]['page']?>">
@@ -842,7 +842,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
 
@@ -869,7 +869,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-					
+
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[6]['page']?>">
@@ -891,7 +891,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[4]['page']?>">
@@ -913,7 +913,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[3]['page']?>">
@@ -935,7 +935,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
 
