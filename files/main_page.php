@@ -128,7 +128,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[0]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> STORY </p>
                 <p class="score-color" style="color: #6c63ff;"> 7.5 </p>
               </div>
 
@@ -145,7 +145,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[1]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> MUSIC </p>
                 <p class="score-color"> 8.0 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[2]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> VISUAL </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -191,7 +191,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[4]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> IMPACT </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -207,7 +207,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[5]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> MESSAGAE </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -224,7 +224,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[6]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> MUSIC </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -240,7 +240,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[7]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> IMPACT </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -272,7 +272,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[9]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> STORY </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -288,7 +288,7 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[10]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
+                <p> IMPACT </p>
                 <p class="score-color"> 7.5 </p>
               </div>
 
@@ -317,8 +317,8 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[8]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
-                <p class="score-color" style="color: #6c63ff;"> 7.5 </p>
+                <p> COMEOUT </p>
+                <p class="score-color" style="color: #6c63ff;"> 20.08.26 </p>
               </div>
             </div>
           </section>
@@ -331,8 +331,8 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[5]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
-                <p class="score-color" style="color: #6c63ff;"> 7.5 </p>
+                <p> COMEOUT </p>
+                <p class="score-color" style="color: #6c63ff;"> 19.11.21 </p>
               </div>
             </div>
           </section>
@@ -345,8 +345,8 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[9]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
-                <p class="score-color" style="color: #6c63ff;"> 7.5 </p>
+                <p> COMEOUT </p>
+                <p class="score-color" style="color: #6c63ff;"> 19.05.23 </p>
               </div>
             </div>
           </section>
@@ -359,8 +359,8 @@
             <div class="section6-info">
               <h4 class="info-title"> <?php print_r($result[10]['title']);?> </h4>
               <div class="section6-score">
-                <p> Acting </p>
-                <p class="score-color" style="color: #6c63ff;"> 7.5 </p>
+                <p> COMEOUT </p>
+                <p class="score-color" style="color: #6c63ff;"> 19.04.24 </p>
               </div>
             </div>
           </section>
