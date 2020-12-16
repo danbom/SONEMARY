@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="path/to/chartjs/dist/Chart.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Sonemary main page" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
@@ -352,8 +353,8 @@
               </a>
             </div>
 
-            <div class="section7-info">
-              <div>
+            <div class="section7-info" style="border: 1px dotted red;">
+              <div style="border: 1px dotted red;">
                 <div class="title" style="font-size: 18px; font-weight: bold;">
                   Spider-Man: Homecoming
                 </div>
@@ -365,7 +366,7 @@
                   <img src="image/badge_impact.png" />
                 </div>
               </div>
-              <div class="info-review">
+              <div class="info-review" style="border: 1px dotted red;">
                 <a href="review_page.html"> Write your Review </a>
               </div>
             </div>
@@ -375,6 +376,7 @@
                 <canvas id="myChart" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
+            
           </div>
 
           <div class="section7-contents">
@@ -404,7 +406,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart1" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart1" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -436,7 +438,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart2" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart1" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -512,5 +514,6 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script type="text/javascript" src="main_script.js"></script>
+    <script type="text/javascript" src="hexChart.js"></script>
   </body>
 </html>
