@@ -571,29 +571,10 @@ a.signin:active {
 }
 .search-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .search-list li {
-  display: flex;
-  flex-direction: column;
   width: 150px;
-  height: 310px;
+  height: 260px;
   margin : 15px;
 }
-.search-list-std {
-  float: left;
-  font-size: 13px;
-}
-.search-list-score {
-  float: right;
-  margin: 2px;
-  font-size: 12px;
-  font-weight: weight;
-}
-
-#key {
-  margin-left: 10px;
-}
-/*
-.abcd {
-  border: 1px solid red;
-} */

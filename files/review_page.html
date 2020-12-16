@@ -15,19 +15,23 @@
 				<a href="main_page.html"><img src="image/SONEMARY.png"></a>
 			</div>
 			<div id="username">
-				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
-      </div>
-				<nav>
-					<ul id="menu-list">
-						<li><a href="genre.html"> Genre </a></li>
-						<li><a href="top10.html"> Top10 </a></li>
-						<li><a href="new.html"> New </a></li>
-					</ul>
-				</nav>
-				<form id="search" onClick="location.href='search_page.html'">
-					<input type="text" id="searchKey" name="searchKey" placeholder="search...">
-	        <button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
-				</form>
+				<a href="my_page.html">
+					Welcome, USER
+					<img src="image/profile-user.png" />
+				</a>
+			</div>
+			<nav>
+				<ul id="menu-list">
+					<li><a href="genre.html" id="ami"> Genre </a></li>
+					<li><a href="top10.html" id="ami"> Top10 </a></li>
+					<li><a href="new.html" id="ami"> New </a></li>
+				</ul>
+			</nav>
+			<form id="search" onClick="location.href='search_page.php'">
+				<input type="text" id="searchKey" name="searchKey" placeholder="search...">
+				<button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
+			</form>
+
 		</header>
 
 		<article class="main-article">
@@ -41,22 +45,51 @@
 					<div class="info-title" style="font-weight: bold">
 						Spider-Man: Homecoming
 					</div>
-					<div class="info-details">
-						Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
-					</div>
-					<section class="visualize-gallery">
-						<img class="slide-image" src="image/score_user.png">
-						<img class="slide-image" src="image/score_critic.png">
-						<img class="slide-image" src="image/score_comparison.png">
 
-						<a class="slide-btn prev" style="top: 100%;" onclick="plusDivs(-1)">❮</a>
-						<a class="slide-btn next" style="top: 100%;" onclick="plusDivs(1)">❯</a>
-					</section>
+				</section>
+			</div>
+			<div>
+				<header class="section1-header" style="margin: 10px 0px;">
+					<h2>Assessment Guidelines</h2>
+				</header>
+				<div style="font-size: 12pt; font-weight: bold;"> STORY & SCREENPLAY<br> </div>
+				<div style="font-size: 11pt;"> This evaluation criteria assesses the storyline and script of a movie. If
+					you think the story of this movie is solid or if you think the double track is great, please give a
+					high score on this evaluation standard.<br>
 				</div>
-				<div class="section1-img" style="float: right;">
-						<img src="image/movie_spiderman_0.png">
+
+				<div style="font-size: 12pt; font-weight: bold;"> SOUND & MUSIC <br> </div>
+				<div style="font-size: 9pt;"> If you think the background music of this movie was beautiful or if you think the atmosphere of the
+					movie and the music of the movie matched well, please raise the score of this evaluation standard.<br>
+					VISUAL DESIGN <br>
 				</div>
-			</article>
+
+				<div style="font-size: 12pt; font-weight: bold;"> VISUAL DESIGN <br> </div>
+				<div style="font-size: 9pt;"> If you like the video of this movie or if you think the movie has excellent visual beauty, please give a high score on this evaluation standard.<br>
+				</div>
+
+				<div style="font-size: 12pt; font-weight: bold;"> ACTING<br> </div>
+				<div style="font-size: 9pt;"> If the actors' performances in this movie were good or if they were immersed in the acting, please raise the score of this evaluation standard.<br>
+				</div>
+
+				<div style="font-size: 12pt; font-weight: bold;"> EMOTIONAL IMPACT<br> </div>
+				<div style="font-size: 9pt;"> If the atmosphere of this movie is so impressive that it lingers even after the movie is over, please raise the score of this evaluation standard.<br>
+
+				</div>
+				<div style="font-size: 12pt; font-weight: bold;"> MESSAGE<br> </div>
+				<div style="font-size: 9pt;"> If the message this movie is trying to convey is well delivered or you like the lesson, please raise the
+					score on this evaluation standard.<br>
+
+
+
+			</div>
+		</article>
+
+
+		<article class="review">
+			<header class="section1-header" style="margin: 50px 0px;">
+				<h2>Write your Review</h2>
+			</header>
 
 			<div class="user-review">
 				<article class="review-score-input">
@@ -72,13 +105,13 @@
 									<textarea id="comment" name="comment" cols="90" rows="15" placeholder="comments..."></textarea>
 								</div>
 							</section>
-						
+
 							<!-- 스코어 6가지 입력 -->
 							<section class="score-form">
 								<header class="section1-header">
 									<h1>Score</h1>
 								</header>
-							
+
 								<div class="evaluation-standard-list">
 									<div class="evaluation-standard">
 										<div class="evaluation criteria"> Story & Screenplay </div>
@@ -124,7 +157,7 @@
 									</div>
 								</div>
 							</section>
-	
+
 							<!-- 등록 버튼 -->
 							<section class="submit-cancel">
 								<div class="cancel-button button">
@@ -135,7 +168,7 @@
 								</div>
 							</section>
 						</fieldset>
-						
+
 					</form>
 				</article>
 			</div>
