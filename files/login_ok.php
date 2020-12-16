@@ -24,7 +24,7 @@
 	$id = $_POST['user_id']; // 아이디
 	$pw = $_POST['passwd']; // 패스워드
 
-	$query = "select * from user where user_id='$user_id' and passwd='$passwd'";
+	$query = "select * from user where user_id='$id' and password='$pw'";
 	$result = mysqli_query($connect, $query);
 	$row = mysqli_fetch_array($result);
 

@@ -19,14 +19,15 @@ if(mysqli_connect_error()){
   echo mysqli_connect_error();
 }
 
-mysqli_query($connect,'SET NAMES utf8');
+//mysqli_query($connect,'SET NAMES utf8');
 
 $user_id = $_POST['user_id'];
 $password=$_POST['password'];
 $critic=$_POST['critic'];
 
-
-$sql = "INSERT INTO user (user_id,password,critic) VALUES ('".$user_id."','".$password."','".$critic."')";
+$sql = "INSERT INTO user (user_id,password,critic) VALUES ($user_id, $password, $critic)";
+mysqli_query($connect, $sql);
+//$sql = "INSERT INTO user (user_id,password,critic) VALUES ('".$user_id."','".$password."','".$critic."')";
 
 
 ?>
