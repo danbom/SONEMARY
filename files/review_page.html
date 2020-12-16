@@ -112,7 +112,7 @@
 			<div class="user-review">
 				<article class="review-score-input">
 					<!-- 리뷰 (comment & 6 score) 등록 form. php로 전송 -->
-					<form method="GET" action="review & score.php" accept-charset="utf-8" name="score_input">
+					<form method="post" action="write_review.php" accept-charset="utf-8" name="score_input">
 						<fieldset>
 							<!-- 코멘트 입력 -->
 							<section class="review-form">
@@ -180,11 +180,12 @@
 								<div class="cancel-button button">
 									<a href="main_page.php">Cancel</a>
 								</div>
-								<div class="submit-button">
-									<a href="score_page.html"><input type="submit" id="submit" name="submit"
-											value="Submit"></a>
 
-								</div>
+									<div class="submit-button">
+
+										<input type="submit" id="submit" name="submit" value="Submit">
+									</div>
+
 							</section>
 						</fieldset>
 
