@@ -13,7 +13,7 @@
     <div id="app">
       <header id="main-header">
         <div id="logo">
-          <a href="main_page.html"><img src="image/SONEMARY.png" /></a>
+          <a href="main_page.php"><img src="image/SONEMARY.png" /></a>
         </div>
         <div id="username">
           <a href="my_page.html">
@@ -24,8 +24,8 @@
         <nav>
           <ul id="menu-list">
             <li><a href="genre.html" id="ami"> Genre </a></li>
-            <li><a href="top10.html" id="ami"> Top10 </a></li>
-            <li><a href="new.html" id="ami"> New </a></li>
+            <li><a href="top10.php" id="ami"> Top10 </a></li>
+            <li><a href="new.php" id="ami"> New </a></li>
           </ul>
         </nav>
         <form id="search" onClick="location.href='search_page.php'">
@@ -519,8 +519,8 @@
           <h4 id="site-define">My<br></h4>
         </div>
         <div class="right_box" style="float:left; width:50%; background-color: black; color: white;">
-      CONTECT<br><br>
-      DEVELPED BY<br><br>
+      CONTACT<br><br>
+      DEVELOPED BY<br><br>
       <h4 id="site-define">
         Eunyoung (danbom)<br>
         Sunwoo (mallang7)<br>
@@ -536,5 +536,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script type="text/javascript" src="main_script.js"></script>
     <script type="text/javascript" src="hexChart.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
   </body>
 </html>
