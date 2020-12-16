@@ -20,7 +20,7 @@
         </div>
         <div id="username">
           <a href="my_page.html">
-            Welcome, USER 
+            Welcome, USER
             <img src="image/profile-user.png"/>
           </a>
         </div>
@@ -53,7 +53,7 @@
 							<button type="submit">Log In</button>
 						</div>
 						<div class="signin-button">
-							<a href="signin_page.html" class="signin">Create new account</a>
+							<a href="membersave.php" class="signin">Create new account</a>
 						</div>
 					</form>
 				</section>
