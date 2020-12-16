@@ -11,7 +11,7 @@
 
     <script language = "javascript">
 
-function div_OnOff(v,id1,id2,id3){
+function div_OnOff(v,id1,id2,id3,id4,id5,id6,id7,id8,id9){
  // 라디오 버튼 value 값 조건 비교
  if(v == "1"){
   document.getElementById(id1).style.display = "block"; // 보여줌
@@ -162,7 +162,7 @@ function div_OnOff(v,id1,id2,id3){
 				</form>
 		</header>
 
-		<article class="main-article" style="padding-bottom: 15%;">
+		<article class="main-article">
 
 				<header class="section1-header">
 					<h2>Genre</h2>
