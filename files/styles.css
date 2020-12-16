@@ -285,10 +285,8 @@ footer {
 
 /* 섹션6: 메인페이지 영화 목록1 가로형 */
 .section6 {
-  height: 340px;
   display: flex;
-  overflow: hidden;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 .section6::after {
   content: "";
@@ -297,8 +295,7 @@ footer {
 }
 /* 섹션6: 내용 */
 .section6-contents {
-  margin: 10px 8px;
-  display: inline-block;
+  margin: 25px 8px;
 }
 /* 섹션6: 위 포스터 */
 .section6-img {
