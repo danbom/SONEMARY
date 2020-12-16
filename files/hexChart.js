@@ -52,9 +52,11 @@
 //       error: function(data){}
 //     });
 //   };
-  
-  // 모든 차트 공통 옵션
-  var options = {
+// });
+
+
+// 모든 차트 공통 옵션
+var options = {
     scale: {
         angleLines: {
         display: false,
@@ -196,4 +198,3 @@
     options: options
   });
   
-// });
