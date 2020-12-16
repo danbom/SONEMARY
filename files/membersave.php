@@ -19,7 +19,7 @@ session_start();
 
 <header id="main-header">
 	<div id="logo">
-		<a href="main_page.html"><img src="image/SONEMARY.png"></a>
+		<a href="main_page.php"><img src="image/SONEMARY.png"></a>
 	</div>
 	<div id="username">
 		<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
