@@ -11,14 +11,24 @@
     
     <script language = "javascript">
 
-function div_OnOff(v,id){
+function div_OnOff(v,id1,id2,id3){
  // 라디오 버튼 value 값 조건 비교
+ if(v == "1"){
+  document.getElementById(id1).style.display = "block"; // 보여줌
+  document.getElementById(id2).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+ }
+ if(v == "2"){
+  document.getElementById(id2).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id3).style.display = "none";
+ }
  if(v == "3"){
-  document.getElementById(id).style.display = ""; // 보여줌
+  document.getElementById(id3).style.display = "block"; // 보여줌
+  document.getElementById(id1).style.display = "none";
+  document.getElementById(id2).style.display = "none";
  }
- else{
-  document.getElementById(id).style.display = "none"; // 숨김
- }
+ 
 
 }
 
@@ -65,15 +75,16 @@ function div_OnOff(v,id){
                 </header>
                 <br>
                 <div class="checkbox_box" style="width:100%; border:1px solid darkgray; border-radius: 2em; padding: 2%; ">
-                <input type="radio" style="padding-left: 7px;" name="genre" value="1" onclick="div_OnOff(this.value,'con');" > Drama &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con');"> Comedy &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con');"> SF &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="4" onclick="div_OnOff(this.value,'con');"> Romance &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="5" onclick="div_OnOff(this.value,'con');"> Musical &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="6" onclick="div_OnOff(this.value,'con');"> Animation &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="7" onclick="div_OnOff(this.value,'con');"> Family &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="8" onclick="div_OnOff(this.value,'con');"> Adventure &nbsp;&nbsp;&nbsp;
-<input type="radio" style="padding-left: 17px;" name="genre" value="9" onclick="div_OnOff(this.value,'con');"> Fantasy &nbsp;&nbsp;&nbsp;
+                
+<input type="radio" style="padding-left: 17px;" name="genre" value="1" onclick="div_OnOff(this.value,'con1','con2','con3');" > Drama &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="2" onclick="div_OnOff(this.value,'con1','con2','con3');"> Comedy &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="3" onclick="div_OnOff(this.value,'con1','con2','con3');"> SF &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="4" onclick="div_OnOff(this.value,'con1','con2','con3');"> Romance &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="5" onclick="div_OnOff(this.value,'con1','con2');"> Musical &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="6" onclick="div_OnOff(this.value,'con1','con2');"> Animation &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="7" onclick="div_OnOff(this.value,'con1','con2');"> Family &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="8" onclick="div_OnOff(this.value,'con1','con2');"> Adventure &nbsp;&nbsp;&nbsp;
+<input type="radio" style="padding-left: 17px;" name="genre" value="9" onclick="div_OnOff(this.value,'con1','con2');"> Fantasy &nbsp;&nbsp;&nbsp;
 
  
 
@@ -99,7 +110,7 @@ function div_OnOff(v,id){
                 <article class="main-article" style="padding-bottom: 15%;">
 				<!-- 영화 목록 2 -->
                 
-                <div class="section7" id="con">
+                <div class="section7" id="con1" style="display:none">
 					
 					<div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
@@ -108,23 +119,141 @@ function div_OnOff(v,id){
 							</a>
 						</div>
 
-						<div class="section7-info" style="border: 1px dotted red;">
-							<div style="border: 1px dotted red;">
+						<div class="section7-info" style="padding-bottom:10%">
 								<div class="title" style="font-size: 18px; font-weight: bold;">
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
 									<img src="image/badge_highcritic.png" />
-								</div>
 							</div>
 						</div>
 
 					</div>
-				</div>
+                </div>
+                
+                <div class="section7" id="con2" style="display:none">
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div class="section7" id="con3" style="display:none">
+					
+					<div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+                    </div>
+                    
+                    <div class="section7-contents" style="padding-bottom:10%">
+						<div class="section7-img">
+							<a href="<?=$result[10]['page']?>">
+								<img src="<?=$result[10]['poster']?>"/>
+							</a>
+						</div>
+
+						<div class="section7-info" style="padding-bottom:10%">
+								<div class="title" style="font-size: 18px; font-weight: bold;">
+									<?php print_r($result[10]['title']);?>
+								</div>
+								<div class="info-details">
+									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
+								</div>
+								<div class="info-badge">
+									<img src="image/badge_highcritic.png" />
+							</div>
+						</div>
+
+					</div>
+                </div>
+
+
 
 
 			</article>
