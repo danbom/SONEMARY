@@ -16,31 +16,24 @@
       echo "mysql 접속 중 오류 발생";
       echo mysqli_connect_error();
     }
+		if(isset($_POST['user_id'])&&isset($_POST['password'])){//post방식으로 데이터가 보내졌는지?
+      $uid=$_POST['user_id'];//post방식으로 보낸 데이터를 username이라는 변수에 넣는다.
+      $upw=$_POST['password'];//post방식으로 보낸 데이터를 userpw라는 변수에 넣는다.
 
-    mysqli_query($connect,'SET NAMES utf8');
+      //sql문을 sql변수에 저장해놓는다.
+      $sql="SELECT * FROM user where user_id='$uid'&&password='$upw'";
+      if($result=mysqli_fetch_array(mysqli_query($connect,$sql))){//쿼리문을 실행해서 결과가 있으면 로그인 성공
+        echo "user id= $uid";
+        echo "</br>".$result['created'];
+        echo "</br>You are loggined";
+      }
+      else{//쿼리문의 결과가 없으면 로그인 fail을 출력한다.
+        echo "login failed";
+      }
+    }
 
 
-	session_start(); // 세션
-	$id = $_POST['user_id']; // 아이디
-	$pw = $_POST['passwd']; // 패스워드
 
-	$query = "select * from user where user_id='$id' and password='$pw'";
-	$result = mysqli_query($connect, $query);
-	$row = mysqli_fetch_array($result);
-
-
-
-	if($id==$row['user_id'] && $pw==$row['passwd']){ // id와 pw가 맞다면 login
-
-	   $_SESSION['id']=$row['id'];
-	   echo "<script>location.href='main_page.php';</script>";
-
-	}else{ // id 또는 pw가 다르다면 login 폼으로
-
-	   echo "<script>window.alert('invalid username or password');</script>"; // 잘못된 아이디 또는 비빌번호 입니다
-	   echo "<script>location.href='login.php';</script>";
-
-	}
 
 
 

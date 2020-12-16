@@ -1,6 +1,19 @@
 <?php
 include "lib.php";
 
+$host = 'localhost';
+$user = 'root';
+$pw = 'ming0';
+$dbName = 'sonemary';
+
+$connect =mysqli_connect($host, $user, $pw, $dbName);
+print_r($connect);
+
+if(mysqli_connect_error()){
+  echo "mysql 접속 중 오류 발생";
+  echo mysqli_connect_error();
+}
+
 // $movie_id=$_POST[''];
 // $user_id=$_POST[''];
 $rank1=$_POST['story'];
@@ -17,7 +30,7 @@ $review=mysqli_real_escape_string($mysqli,$review);
 $regdate=date("Y-m-d H:i:s");
 // $badge=$_POST[''];
 
-$query="insert into review(rank1,rank2,rank3,rank4,rank5,rank6,review,regdate)
-  values('$rank1','$rank2','$rank3','$rank4','$rank5','$rank6','$review','$regdate')";
+$sql = "INSERT INTO user (user_id, password, critic)"." VALUES ('".$rank1."','".$rank2."','".$rank3."','".$rank4."','".$rank5."','".$rank6."','".$review."','".$regdate."')";
+mysqli_query($connect, $sql);
 
  ?>

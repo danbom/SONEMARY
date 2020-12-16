@@ -1,6 +1,6 @@
 // 메인 페이지 영화 목록 2, 상세 페이지 Score
 // 육각형 그래프
-
+import $ from 'jquery';
 
 $(document).ready(function(){
   showGraph();
@@ -23,7 +23,7 @@ function showGraph(){
         userData.push(data[i].avg5);
         userData.push(data[i].avg6);
       }
-      
+
       var chartData = {
         labels: ["S", "M", "V", "A", "G", "E"],
         datasets: [
@@ -63,7 +63,7 @@ function showGraph(){
             },
         }
       }
-      
+
       var ctx = document.getElementById("myChart");
 
       var myChart = new Chart(ctx, {
