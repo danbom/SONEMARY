@@ -33,7 +33,7 @@
 	if($id==$row['user_id'] && $pw==$row['passwd']){ // id와 pw가 맞다면 login
 
 	   $_SESSION['id']=$row['id'];
-	   echo "<script>location.href='main_page.html';</script>";
+	   echo "<script>location.href='main_page.php';</script>";
 
 	}else{ // id 또는 pw가 다르다면 login 폼으로
 
