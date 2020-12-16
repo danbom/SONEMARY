@@ -51,7 +51,7 @@
     while($row = mysqli_fetch_array($res)) {
      array_push($result, array('movie_id'=>$row[0],'title'=>$row[1],'date'=>$row[2],
      'genre'=>$row[3],'director'=>$row[4],'cast'=>$row[5],'poster'=>$row[6],
-     'page'=>$row[7],'badge'=>$row[8]));
+     'page'=>$row[7],'badge'=>$row[8],'runtime'=>$row[9],'R'=>$row[10]));
     }
     mysqli_close($con);
     ?>
@@ -413,7 +413,7 @@
                 </div>
                 <div class="info-details">
                   <p><?php print_r($result[5]['genre']." | ".$result[5]['date']);?> <br />
-                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
+                    <?php print_r($result[5]['runtime']." | ".$result[5]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_manyreview.png" />
@@ -445,7 +445,7 @@
                 </div>
                 <div class="info-details">
                   <p><?php print_r($result[9]['genre']." | ".$result[9]['date']);?> <br />
-                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
+                    <?php print_r($result[9]['runtime']." | ".$result[9]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_acting.png" />
@@ -477,7 +477,7 @@
                 </div>
                 <div class="info-details">
                   <p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
-                    <?php print_r($result[8]['runtime']." | ".$result[8]['R']);?></p>
+                    <?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
                 </div>
                 <div class="info-badge">
                   <img src="image/badge_highcritic.png" />
