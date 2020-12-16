@@ -117,7 +117,7 @@ function div_OnOff(v,id1,id2,id3){
     mysqli_close($con);
     ?>
                 <br><br>
-                <article class="main-article" style="padding-bottom: 15%;">
+                <article class="main-article">
 				<!-- 영화 목록 2 -->
 
                 <div class="section7" id="con1" style="display:none">
@@ -134,7 +134,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
@@ -159,7 +159,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
@@ -208,7 +208,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
@@ -230,7 +230,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
@@ -252,7 +252,7 @@ function div_OnOff(v,id1,id2,id3){
 									<?php print_r($result[10]['title']);?>
 								</div>
 								<div class="info-details">
-									<p style="padding-bottom:10% margin-bottom:10%"><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
+									<p><?php print_r($result[10]['genre']." | ".$result[10]['date']);?> <br />
 										<?php print_r($result[10]['runtime']." | ".$result[10]['R']);?></p>
 								</div>
 								<div class="info-badge">
