@@ -26,7 +26,7 @@ session_start();
 </div>
 		<nav>
 			<ul id="menu-list">
-				<li><a href="genre.html" id="ami"> Genre </a></li>
+				<li><a href="genre.php" id="ami"> Genre </a></li>
 				<li><a href="top10.php" id="ami"> Top10 </a></li>
 				<li><a href="new.php" id="ami"> New </a></li>
 			</ul>
