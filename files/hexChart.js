@@ -64,7 +64,7 @@ function showGraph(){
         }
       }
       
-      var ctx = document.getElementById("myChart1");
+      var ctx = document.getElementById("myChart");
 
       var myChart = new Chart(ctx, {
         type:"radar",
