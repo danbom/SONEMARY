@@ -17,10 +17,17 @@
           <a href="main_page.php"><img src="image/SONEMARY.png" /></a>
         </div>
         <div id="username">
-          <a href="my_page.html">
-            Welcome, USER
-            <img src="image/profile-user.png"/>
-          </a>
+          <?php
+          session_start();
+          if(!isset($_SESSION['user_id'])) {
+            echo "<a href=login.html>LOGIN</a>";
+          }
+          else {
+            echo "<a href=../my_page.html>MY</a>";
+            echo " | ";
+            echo "<a href=logout.php>LOGOUT</a>";
+          }
+           ?>
         </div>
         <nav>
           <ul id="menu-list">
@@ -395,7 +402,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart" style="width:200px; height:200px;"></canvas>
+                <canvas id="myChart1" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
 
@@ -428,7 +435,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas class="myChart1" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart2" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -460,7 +467,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas class="myChart1" style="width:200px; height:200px;"></canvas>
+                <canvas class="myChart3" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
@@ -492,7 +499,7 @@
 
             <div class="section7-score">
               <div class="graph">
-                <canvas id="myChart3" style="width:200px; height:200px;"></canvas>
+                <canvas id="myChart4" style="width:200px; height:200px;"></canvas>
               </div>
             </div>
           </div>
