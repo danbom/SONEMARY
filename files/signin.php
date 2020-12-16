@@ -8,10 +8,10 @@ ini_set("display_errors",1);
 
 $host = 'localhost';
 $user = 'root';
-$pw = '1540';
+$pw = 'ming0';
 $dbName = 'sonemary';
 
-$connect =mysqli_connect($host, $user,$pw, $dbName);
+$connect =mysqli_connect($host, $user, $pw, $dbName);
 print_r($connect);
 
 if(mysqli_connect_error()){
@@ -19,7 +19,7 @@ if(mysqli_connect_error()){
   echo mysqli_connect_error();
 }
 
-mysqli_query($conn,'SET NAMES utf8');
+mysqli_query($connect,'SET NAMES utf8');
 
 $user_id = $_POST['user_id'];
 $password=$_POST['password'];
