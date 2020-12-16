@@ -71,22 +71,22 @@ $(document).ready(function(){
   var ctx3 = document.getElementById("myChart3");
   var ctx4 = document.getElementById("myChart4");
   
-  new Chart(ctx1, {
+  var myChart1 = new Chart(ctx1, {
     type:"radar",
     data: generateData(9),
     options: options
   });
-  new Chart(ctx2, {
+  var myChart2 = new Chart(ctx2, {
     type:"radar",
     data: generateData(6),
     options: options
   });
-  new Chart(ctx3, {
+  var myChart3 = new Chart(ctx3, {
     type:"radar",
     data: generateData(10),
     options: options
   });
-  new Chart(ctx4, {
+  var myChart4 = new Chart(ctx4, {
     type:"radar",
     data: generateData(11),
     options: options
