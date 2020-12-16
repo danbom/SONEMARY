@@ -25,7 +25,7 @@
 			<li><a href="new.php" id="ami"> New </a></li>
 		</ul>
 	</nav>
-	<form id="search" onClick="location.href='search_page.php'">
+	<form id="search">
 		<input type="text" id="searchKey" name="searchKey" placeholder="search...">
 		<button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
 	</form>
@@ -41,7 +41,7 @@
 				<ul class="search-list" id="list"></ul>
 
 				<?php
-				$con=mysqli_connect("localhost","root","","sonemary");
+				$con=mysqli_connect("localhost","root","ming0","sonemary");
 				mysqli_set_charset($con,"utf8");
 				$res = mysqli_query($con, "select * from movies");
 				$result = array();
@@ -120,7 +120,7 @@
 
 					const searchInput = document.getElementById('search');
 					searchInput.addEventListener('submit', (event) => {
-					  event.preventDefault();
+						event.preventDefault();
 					  let value = document.getElementById('searchKey').value;
 					  printKey(value);
 
@@ -134,6 +134,7 @@
 					  } else {
 					    clearList();
 					  }
+
 					});
 
 					function init() {

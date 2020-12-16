@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<title>Sonemary</title>
     <link rel="stylesheet" href="styles.css">
-    
+
     <script language = "javascript">
 
 function div_OnOff(v,id1,id2,id3){
@@ -86,16 +86,16 @@ function div_OnOff(v,id1,id2,id3){
 <input type="radio" style="padding-left: 17px;" name="genre" value="8" onclick="div_OnOff(this.value,'con1','con2');"> Adventure &nbsp;&nbsp;&nbsp;
 <input type="radio" style="padding-left: 17px;" name="genre" value="9" onclick="div_OnOff(this.value,'con1','con2');"> Fantasy &nbsp;&nbsp;&nbsp;
 
- 
 
-                        
+
+
                     </div>
                 </div>
 
 
                 <?php
     include "lib.php";
-    $con=mysqli_connect("localhost","root","","sonemary");
+    $con=mysqli_connect("localhost","root","ming0","sonemary");
     mysqli_set_charset($con,"utf8");
     $res = mysqli_query($con, "select * from movies");
     $result = array();
