@@ -595,14 +595,14 @@ a.signin:active {
 }
 .search-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .search-list li {
-  display: flex;
-  flex-direction: column;
   width: 150px;
-  height: 310px;
+  height: 260px;
   margin : 15px;
 }
+<<<<<<< HEAD
 .search-list-std {
   float: left;
   font-size: 13px;
@@ -613,3 +613,5 @@ a.signin:active {
   font-size: 12px;
   font-weight: weight;
 }
+=======
+>>>>>>> origin/minah

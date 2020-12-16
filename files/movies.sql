@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- 생성 시간: 20-12-15 19:45
+-- 생성 시간: 20-12-16 10:02
 -- 서버 버전: 10.4.17-MariaDB
 -- PHP 버전: 8.0.0
 
@@ -44,17 +44,17 @@ CREATE TABLE `movies` (
 --
 
 INSERT INTO `movies` (`movie_id`, `title`, `date`, `genre`, `director`, `cast`, `poster`, `page`, `badge`) VALUES
-(1, 'The Sound of Music', '1978-02-04', 'Romance, Drama, Musical', 'Robert Wise', 'Julie Andrews, Christopher Plummer', 'image/poster_TheSoundofMusic.png', NULL, NULL),
-(2, 'Titanic', '1998-02-20', 'Romance, Drama', 'James Cameron', 'Leonardo DiCaprio, Kate Winslet', 'image/poster_Titanic.png', NULL, NULL),
-(3, 'E.T. - The Extra Terrestrial', '1984-06-23', 'Family, Fantasy', 'Steven Spielberg', 'Henry Thomas, Robert MacNaughton', 'image/poster_et.png', NULL, NULL),
-(4, 'Spider-Man: Homecoming', '2017-07-05', 'Action, Adventure, Fantasy', 'Jon Watts', 'Tom Holland, Robert Downey Jr.', 'image/poster_SpiderMan.png', NULL, NULL),
-(5, 'Avatar', '2009-12-17', 'Action, Adventure, SF', 'James Cameron', 'Sam Worthington, Zoe Saldana', 'image/poster_Avatar.png', NULL, NULL),
-(6, 'Frozen II', '2019-11-21', 'Animation, Adventure, Comedy', 'Chris Buck', 'Kristen Bell, Idina Menzel', 'image/poster_Frozen.png', NULL, NULL),
-(7, 'Minions', '2015-07-29', 'Animation, Comedy, Family', 'Pierre Coffin', 'Sandra Bullock, Jon Hamm', 'image/poster_Minions.png', NULL, NULL),
-(8, 'Interstellar', '2014-11-06', 'SF', 'Christopher Nolan', 'Matthew McConaughey, Anne Hathaway', 'image/poster_Interstellar.png', NULL, NULL),
-(9, 'Tenet', '2020-08-26', 'Action, SF', 'Christopher Nolan', 'John David Washington', 'image/poster_Tenet.png', NULL, NULL),
-(10, 'Aladdin', '2019-05-23', 'Adventure, Fantasy, Family', 'Guy Ritchie', 'Mena Massoud, Will Smith', 'image/poster_Aladdin.png', NULL, NULL),
-(11, 'Avengers: Endgame', '2019-04-24', 'Action, SF', 'Anthony Russo', 'Robert Downey Jr., Chris Evans', 'image/poster_Avengers.png', NULL, NULL);
+(1, 'The Sound of Music', '1978-02-04', 'Romance, Drama, Musical', 'Robert Wise', 'Julie Andrews, Christopher Plummer', 'image/poster_TheSoundofMusic.png', 'detail_page.html', NULL),
+(2, 'Titanic', '1998-02-20', 'Romance, Drama', 'James Cameron', 'Leonardo DiCaprio, Kate Winslet', 'image/poster_Titanic.png', 'detail_page.html', NULL),
+(3, 'E.T. - The Extra Terrestrial', '1984-06-23', 'Family, Fantasy', 'Steven Spielberg', 'Henry Thomas, Robert MacNaughton', 'image/poster_et.png', 'detail_page.html', NULL),
+(4, 'Spider-Man: Homecoming', '2017-07-05', 'Action, Adventure, Fantasy', 'Jon Watts', 'Tom Holland, Robert Downey Jr.', 'image/poster_SpiderMan.png', 'detail_page.html', NULL),
+(5, 'Avatar', '2009-12-17', 'Action, Adventure, SF', 'James Cameron', 'Sam Worthington, Zoe Saldana', 'image/poster_Avatar.png', 'detail_page.html', NULL),
+(6, 'Frozen II', '2019-11-21', 'Animation, Adventure, Comedy', 'Chris Buck', 'Kristen Bell, Idina Menzel', 'image/poster_Frozen.png', 'detail_page.html', NULL),
+(7, 'Minions', '2015-07-29', 'Animation, Comedy, Family', 'Pierre Coffin', 'Sandra Bullock, Jon Hamm', 'image/poster_Minions.png', 'detail_page.html', NULL),
+(8, 'Interstellar', '2014-11-06', 'SF', 'Christopher Nolan', 'Matthew McConaughey, Anne Hathaway', 'image/poster_Interstellar.png', 'detail_page.html', NULL),
+(9, 'Tenet', '2020-08-26', 'Action, SF', 'Christopher Nolan', 'John David Washington', 'image/poster_Tenet.png', 'detail_page.html', NULL),
+(10, 'Aladdin', '2019-05-23', 'Adventure, Fantasy, Family', 'Guy Ritchie', 'Mena Massoud, Will Smith', 'image/poster_Aladdin.png', 'detail_page.html', NULL),
+(11, 'Avengers: Endgame', '2019-04-24', 'Action, SF', 'Anthony Russo', 'Robert Downey Jr., Chris Evans', 'image/poster_Avengers.png', 'detail_page.html', NULL);
 
 --
 -- 덤프된 테이블의 인덱스
