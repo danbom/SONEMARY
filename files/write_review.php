@@ -1,5 +1,6 @@
 <?php
 include "lib.php";
+session_start();
 
 $host = 'localhost';
 $user = 'root';
@@ -15,6 +16,7 @@ if(mysqli_connect_error()){
 
 // $movie_id=$_POST[''];
 // $user_id=$_POST[''];
+$userid=$_SESSION['user_id'];
 $rank1=$_POST['story'];
 $rank2=$_POST['music'];
 $rank3=$_POST['design'];
@@ -28,13 +30,13 @@ $review=$_POST['comment'];
 $regdate=date("Y-m-d H:i:s");
 // $badge=$_POST[''];
 
-$sql = "INSERT INTO review ( rank_1, rank_2, rank_3, rank_4, rank_5, rank_6, review, regdate)
-"." VALUES ('".$rank1."','".$rank2."','".$rank3."','".$rank4."','".$rank5."','".$rank6."','".$review."','".$regdate."')";
+$sql = "INSERT INTO review (user_id, rank_1, rank_2, rank_3, rank_4, rank_5, rank_6, review, regdate)
+"." VALUES ('".$userid."','".$rank1."','".$rank2."','".$rank3."','".$rank4."','".$rank5."','".$rank6."','".$review."','".$regdate."')";
 mysqli_query($connect, $sql);
 
  ?>
 
  <meta charset="utf-8" />
  <script type="text/javascript">alert('리뷰가 작성되었습니다.');</script>
- <script>location.href='score_page.php';</script>;
+ <script>location.href='my_page.php';</script>;
  <meta http-equiv="refresh" content="0 url=/">
