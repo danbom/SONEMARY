@@ -99,6 +99,7 @@ footer {
 #ami {font-weight: bold;}
 
 #rightbox-text {COLOR: white;}
+#site-define {font-size: 13px; color: #adadad;}
 
 /* 메인 부분 */
 .main-article {
@@ -106,6 +107,12 @@ footer {
   flex-direction: column;
   margin: 20px 160px;
   padding: 10px;
+}
+
+.badge-article {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 160px;
 }
 
 /* 메인: 섹션1 영화 */
@@ -124,8 +131,7 @@ footer {
 /* 내용: 좌측 이미지 */
 .section1-img {
   float: left;
-  width: 700px;
-  height: 400px;
+  width: 60%;
   margin: 10px;
 }
 /* 내용: 우측 정보 */
@@ -135,7 +141,7 @@ footer {
   padding: 10px;
 }
 .info-title {
-  font-size: 25px;
+  font-size: 27px;
 }
 .info-details {
   margin: 20px 0px;
@@ -160,7 +166,9 @@ footer {
 }
 /* 섹션2: 내용 */
 .section2-contents {
-  margin: 50px;
+  margin-left: 50px;
+  margin-top:30px;
+  margin-bottom:5px;
 }
 /* 섹션2: 좌측 이미지 */
 .section2-img {
@@ -169,7 +177,7 @@ footer {
 }
 .badge {
   width: 50px;
-  height: 65px;
+  height: 50px;
 }
 .profile {
   width: 60px;
@@ -181,10 +189,10 @@ footer {
 }
 /* 섹션2: 우측 정보 */
 .section2-info {
-  padding: 5px 0px;
 }
+
 .info-main {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .info-sub {
@@ -222,9 +230,9 @@ footer {
 .section4-gallery {
   position: relative;
   margin-top: 50px;
-  margin-right: 50px;
-  width: 600px;
-  height: 400px;
+  margin-right: 150px;
+  width: 550px;
+  height: 360px;
 }
 
 /* 시각화, 갤러리: 이미지 슬라이드 */
@@ -277,10 +285,8 @@ footer {
 
 /* 섹션6: 메인페이지 영화 목록1 가로형 */
 .section6 {
-  height: 340px;
   display: flex;
-  overflow: hidden;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 .section6::after {
   content: "";
@@ -289,8 +295,7 @@ footer {
 }
 /* 섹션6: 내용 */
 .section6-contents {
-  margin: 10px 8px;
-  display: inline-block;
+  margin: 25px 8px;
 }
 /* 섹션6: 위 포스터 */
 .section6-img {
@@ -329,9 +334,18 @@ footer {
   display: block;
 }
 .section7-contents {
-  display: flex;
+  width:100%;
+  float: left;
+  display: inline-flex;
   height: 200px;
   margin-bottom: 20px;
+}
+.section7-contents1 {
+  width:50%;
+  float: left;
+  display: inline-flex;
+  height: 200px;
+  padding-bottom: 8%;
 }
 /* 섹션7: 왼쪽 포스터 */
 .section7-img {
@@ -362,12 +376,15 @@ footer {
   margin-left: auto;
 }
 
+.section4-score {
+  margin-right: auto;
+}
+
 /* 리뷰 작성 */
 .user-review {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 .review-form {
   margin-right: 30px;
@@ -377,17 +394,19 @@ footer {
   border: 2px solid #9c9c9c;
   border-radius: 15px;
   outline: none;
-  padding: 30px;
+  padding: 10px;
 }
 .score-form {
   float: left;
 }
 .evaluation-standard {
-  background-color: #bcbcbcc0;
+  border: 1px solid #6c63ff;
+  background-color: #6b63ff2c;
   border-radius: 30px;
-  width: 350px;
-  height: 50px;
+  width: 500px;
+  height: 40px;
   margin: 10px;
+  margin-bottom: 10px;
   display: flex;
 }
 .evaluation {
@@ -396,11 +415,11 @@ footer {
 .criteria {
   font-weight: bold;
   color: #303030;
-  margin: 12px 20px;
+  margin: 8px 20px;
   flex-grow: 1;
 }
 .scoreInput {
-  margin: 12px 20px;
+  margin: 8px 20px;
 }
 .submit-cancel {
   margin: 20px;
@@ -573,29 +592,10 @@ a.signin:active {
 }
 .search-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .search-list li {
-  display: flex;
-  flex-direction: column;
   width: 150px;
-  height: 310px;
+  height: 260px;
   margin : 15px;
 }
-.search-list-std {
-  float: left;
-  font-size: 13px;
-}
-.search-list-score {
-  float: right;
-  margin: 2px;
-  font-size: 12px;
-  font-weight: weight;
-}
-
-#key {
-  margin-left: 10px;
-}
-/*
-.abcd {
-  border: 1px solid red;
-} */
