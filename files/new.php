@@ -17,7 +17,17 @@
 				<a href="main_page.php"><img src="image/SONEMARY.png"></a>
 			</div>
 			<div id="username">
-				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
+				<?php
+				session_start();
+				if(!isset($_SESSION['user_id'])) {
+					echo "<a href=login.html>LOGIN</a>";
+				}
+				else {
+					echo "<a href=my_page.html>MY</a>";
+					echo " | ";
+					echo "<a href=logout.php>LOGOUT</a>";
+				}
+				 ?>
       </div>
 				<nav>
 					<ul id="menu-list">
