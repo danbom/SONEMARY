@@ -370,17 +370,17 @@
           <div class="section7-contents">
             <div class="section7-img">
               <a href="<?=$result[8]['page']?>">
-                <img src="image/movie_spiderman_poster.jpg"/>
+                <img src="<?=$result[8]['poster']?>"/>
               </a>
             </div>
 
             <div class="section7-info" style="border: 1px dotted red;">
               <div style="border: 1px dotted red;">
                 <div class="title" style="font-size: 18px; font-weight: bold;">
-                  Spider-Man: Homecoming
+                  <?php print_r($result[8]['title']);?>
                 </div>
                 <div class="info-details">
-                  <p>Action, Adventure, SF | USA | 2017.07.05 <br />
+                  <p><?php print_r($result[8]['genre']+" "+$result[8]['date']);?> <br />
                     2h 13m | R12</p>
                 </div>
                 <div class="info-badge">
