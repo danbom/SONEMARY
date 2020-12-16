@@ -112,7 +112,7 @@ function div_OnOff(v,id1,id2,id3){
   document.getElementById(id8).style.display = "none";
   document.getElementById(id3).style.display = "none";
  }
- 
+
 
 }
 
@@ -136,7 +136,17 @@ function div_OnOff(v,id1,id2,id3){
 				<a href="main_page.php"><img src="image/SONEMARY.png"></a>
 			</div>
 			<div id="username">
-				<a href="my_page.html">Welcome, USER <img src="image/profile-user.png"></a>
+				<?php
+				session_start();
+				if(!isset($_SESSION['user_id'])) {
+					echo "<a href=login.html>LOGIN</a>";
+				}
+				else {
+					echo "<a href=my_page.html>MY</a>";
+					echo " | ";
+					echo "<a href=logout.php>LOGOUT</a>";
+				}
+				 ?>
       </div>
 				<nav>
 					<ul id="menu-list">
@@ -193,7 +203,7 @@ function div_OnOff(v,id1,id2,id3){
                 <br><br>
                 <article class="main-article">
 				<!-- 영화 목록 2 -->
-                
+
                 <div class="section7" id="con1" style="display:none">
 					
 					<div class="section7-contents">
@@ -553,7 +563,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
                     <div class="section7-contents" style="padding-bottom:10%">
 						<div class="section7-img">
 							<a href="<?=$result[10]['page']?>">
@@ -575,7 +585,7 @@ function div_OnOff(v,id1,id2,id3){
 						</div>
 
                     </div>
-                    
+
 
                 </div>
 
