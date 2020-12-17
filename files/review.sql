@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 20-12-16 20:09
+-- 생성 시간: 20-12-17 00:59
 -- 서버 버전: 10.4.14-MariaDB
 -- PHP 버전: 7.4.11
 
@@ -60,7 +60,23 @@ INSERT INTO `review` (`index`, `movie_id`, `user_id`, `critic`, `rank_1`, `rank_
 (11, 11, 'admin', 'general', 7, 6, 8, 7, 8, 6, 'The only complaint about Avengers: Endgame is that it raises the bar so high that there may well never be a superhero movie to match it.', '2020-12-14 12:38:28'),
 (12, 4, 'admin', 'critic', 6, 6, 8, 7, 5, 4, 'This is a charming, funny, coming-of-age story about a 15-year-old, Peter Parker, who has more power than he can handle and at the same time is frustrated that he can\'t show it off.', '2020-12-13 10:19:25'),
 (13, 4, 'admin', 'general', 6, 5, 7, 7, 4, 5, 'Just one more forgettable, indistinguishable entry into the rapidly-growing collection of Marvel\'s superhero extravaganzas.', '2020-12-15 20:50:19'),
-(14, 4, 'admin', 'critic', 7, 5, 6, 7, 6, 3, 'It makes such a difference when a villain is given more than the standard arbitrary screen time. Whilst not perfect and Keaton could have benefited from more screen time, but he makes every scene count.', '2020-12-16 12:26:00');
+(14, 4, 'admin', 'critic', 7, 5, 6, 7, 6, 3, 'It makes such a difference when a villain is given more than the standard arbitrary screen time. Whilst not perfect and Keaton could have benefited from more screen time, but he makes every scene count.', '2020-12-16 12:26:00'),
+(15, 1, 'admin', 'general', 6, 9, 5, 5, 7, 5, '.', '2020-12-12 15:35:28'),
+(16, 1, 'admin', 'critic', 6, 8, 6, 6, 6, 6, '.', '2020-12-14 03:18:51'),
+(17, 2, 'admin', 'critic', 6, 7, 7, 8, 8, 5, '.', '2020-12-14 13:09:15'),
+(18, 2, 'admin', 'general', 7, 5, 7, 6, 9, 6, '.', '2020-12-15 23:54:41'),
+(19, 3, 'admin', 'critic', 8, 6, 7, 5, 6, 7, '.', '2020-12-14 04:07:14'),
+(20, 3, 'admin', 'general', 7, 6, 7, 6, 7, 5, '.', '2020-12-14 13:34:14'),
+(21, 4, 'admin', 'critic', 5, 4, 8, 6, 3, 3, '.', '2020-12-13 07:12:38'),
+(22, 4, 'admin', 'general', 7, 7, 8, 6, 3, 2, '.', '2020-12-17 16:51:29'),
+(23, 6, 'admin', 'critic', 8, 8, 10, 7, 8, 5, '.', '2020-12-17 08:11:07'),
+(24, 6, 'admin', 'general', 7, 8, 9, 7, 8, 6, '.', '2020-12-15 23:40:21'),
+(25, 7, 'admin', 'critic', 6, 6, 7, 4, 4, 5, '.', '2020-12-17 08:16:48'),
+(27, 7, 'admin', 'general', 7, 5, 6, 5, 6, 4, '.', '2020-12-15 08:13:29'),
+(28, 8, 'admin', 'critic', 8, 9, 10, 6, 7, 5, '.', '2020-12-09 08:44:26'),
+(29, 8, 'admin', 'general', 8, 7, 8, 7, 6, 7, '.', '2020-12-15 13:38:16'),
+(30, 9, 'admin', 'critic', 7, 6, 7, 6, 5, 6, '.', '2020-12-17 08:00:53'),
+(31, 9, 'admin', 'general', 7, 5, 6, 6, 5, 5, '.', '2020-12-13 04:29:54');
 
 --
 -- 덤프된 테이블의 인덱스
@@ -80,7 +96,7 @@ ALTER TABLE `review`
 -- 테이블의 AUTO_INCREMENT `review`
 --
 ALTER TABLE `review`
-  MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
