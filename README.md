@@ -53,9 +53,38 @@ Within one hexagon, you can compare the scores of professionals with those of or
 
 
 ------
-
-
-
+##  2. DB design and structure
+```
+CREATE TABLE `movies` (
+  `movie_id` int(3) NOT NULL COMMENT '영화 번호',
+  `title` varchar(50) DEFAULT NULL COMMENT '제목',
+  `date` date DEFAULT NULL COMMENT '개봉일',
+  `genre` varchar(30) DEFAULT NULL COMMENT '장르',
+  `director` varchar(20) DEFAULT NULL COMMENT '감독',
+  `cast` varchar(50) DEFAULT NULL COMMENT '캐스팅',
+  `poster` varchar(50) DEFAULT NULL COMMENT '포스터 이미지 경로',
+  `page` varchar(30) DEFAULT NULL COMMENT '상세 페이지 경로',
+  `badge` enum('Story','Music','Visual','Acting','Message','Emotion','Creativity','Popularity') DEFAULT NULL COMMENT '뱃지',
+  `runtime` varchar(10) DEFAULT NULL,
+  `R` varchar(5) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
+```
+CREATE TABLE `review` (
+  `index` int(11) NOT NULL,
+  `movie_id` int(11) NOT NULL,
+  `user_id` varchar(10) NOT NULL,
+  `critic` varchar(10) NOT NULL,
+  `rank_1` int(11) NOT NULL,
+  `rank_2` int(11) NOT NULL,
+  `rank_3` int(11) NOT NULL,
+  `rank_4` int(11) NOT NULL,
+  `rank_5` int(11) NOT NULL,
+  `rank_6` int(11) NOT NULL,
+  `review` text NOT NULL,
+  `regdate` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
 
 ------
 
