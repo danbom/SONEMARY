@@ -55,7 +55,7 @@ Within one hexagon, you can compare the scores of professionals with those of or
 ------
 ##  2. DB design and structure
 
-<img width="268" alt="데이터베이스구조" src="https://user-images.githubusercontent.com/52442878/102421864-d62c9100-4048-11eb-8bcc-336e7861947d.png">
+<img width="350" alt="데이터베이스구조" src="https://user-images.githubusercontent.com/52442878/102421864-d62c9100-4048-11eb-8bcc-336e7861947d.png">
 ```
 CREATE TABLE `movies` (
   `movie_id` int(3) NOT NULL COMMENT '영화 번호',
