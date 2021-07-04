@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Sonemary main page" />
+	<meta name="keywords" content="HTML5, CSS3, JavaScript" />
+	<title>Score Page</title>
+	<link rel="stylesheet" href="styles.css?after234452232f22" />
+</head>
+
+<body>
+	<div id="app">
+
+		<header id="main-header">
+			<div id="logo">
+				<a href="main_page.php"><img src="image/SONEMARY.png"></a>
+			</div>
+			<div id="username">
+				<?php
+				session_start();
+				if(!isset($_SESSION['user_id'])) {
+					echo "<a href=login.html>LOGIN</a>";
+				}
+				else {
+					echo "<a href=my_page.html>MY</a>";
+					echo " | ";
+					echo "<a href=logout.php>LOGOUT</a>";
+				}
+				 ?>
+			</div>
+			<nav>
+				<ul id="menu-list">
+					<li><a href="genre.php" id="ami"> Genre </a></li>
+					<li><a href="top10.php" id="ami"> Top10 </a></li>
+					<li><a href="new.php" id="ami"> New </a></li>
+				</ul>
+			</nav>
+			<form id="search" onClick="location.href='search_page.php'">
+				<input type="text" id="searchKey" name="searchKey" placeholder="search...">
+				<button type="submit" id="searchBtn"><img src="image/loupe.png"></button>
+			</form>
+		</header>
+	</div>
+
+		<article class="main-article" style="margin-bottom: 10%;">
+
+			<article class="sectoin1-contents">
+				<div class="section1-info" style="float: left;">
+					<div class="info-title" style="font-weight: bold">
+						Spider-Man: Homecoming
+					</div>
+					<div class="info-details">
+						Action, Adventure, SF | USA | 2017.07.05 <br>2 h 13 m | R12
+					</div>
+					<section class="visualize-gallery">
+
+						<div class="section7-contents">
+							<div class="section4-score">
+								<div class="graph">
+									<div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+									<canvas id="myChart1" style="width: 270; height: 270; display: block;" width="270" height="270" class="chartjs-render-monitor"></canvas>
+								</div>
+							</div>
+						</div>
+
+					</section>
+				</div>
+				<div class="section1-img" style="float: right;">
+					<img src="image/movie_spiderman_0.png">
+				</div>
+			</article>
+
+
+			<article class="review">
+				<header class="section1-header" style="margin: 80px 0px;">
+					<h2>Review</h2>
+					<div class="section1-header-btn">
+						<a href="./review_page.html" id="ami">Write your Review</a>
+					</div>
+				</header>
+
+				<section class="section2-contents">
+					<div class="section2-info">
+						<div class="info-main">Username1</div>
+						<div class="info-sub">Gwen's father, Emma Stone, died and asked Gwen to leave. Because of that, Peter (Andrew Garfield) had to say goodbye.
+
+							However, a man named Jamie Foxx appears. He is an electronic superpower that emits electricity. He developed the ability to generate electricity while experimenting with electrical eel. He was a Spiderman fan, but he was upset and vindictive when Spiderman didn't get close to him.</div>
+						<div>
+							<ul class="info-scores">
+								<li>Story <p>9</p>
+								</li>
+								<li>Acting <p>7</p>
+								</li>
+								<li>Music <p>6</p>
+								</li>
+								<li>Emotion <p>7</p>
+								</li>
+								<li>Visual <p>8</p>
+								</li>
+								<li>Message <p>6</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="section2-contents">
+					<div class="section2-info">
+						<div class="info-main">Username2</div>
+						<div class="info-sub">Meanwhile, Harry Osborne (Dane Dehan) also appears in the second film "Amazing Spider-Man". He inherited the company when the president of Oscorp died. I spent my childhood with Peter. However, Harry is also destined to die of a rare disease because of the family's genes.</div>
+						<div>
+							<ul class="info-scores">
+								<li>Story <p>9</p>
+								</li>
+								<li>Acting <p>7</p>
+								</li>
+								<li>Music <p>6</p>
+								</li>
+								<li>Emotion <p>7</p>
+								</li>
+								<li>Visual <p>8</p>
+								</li>
+								<li>Message <p>6</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="section2-contents">
+					<div class="section2-info">
+						<div class="info-main">Username3</div>
+						<div class="info-sub">Meanwhile, Harry Osborne (Dane Dehan) also appears in the second film "Amazing Spider-Man". He inherited the company when the president of Oscorp died. I spent my childhood with Peter. However, Harry is also destined to die of a rare disease because of the family's genes.</div>
+						<div>
+							<ul class="info-scores">
+								<li>Story <p>9</p>
+								</li>
+								<li>Acting <p>7</p>
+								</li>
+								<li>Music <p>6</p>
+								</li>
+								<li>Emotion <p>7</p>
+								</li>
+								<li>Visual <p>8</p>
+								</li>
+								<li>Message <p>6</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+			</article>
+
+		</article>
+
+		<div class="footer">
+			<div class="footer_box"
+				style="display: flex; background-color: black; color: white; width: 100%; text-align: left; vertical-align: middle; padding-top:5%; padding-bottom:5%; padding-left:5%">
+				<div class="left_box" style="float:left; width:50%; background-color: black; color: white;">
+					<h3>SONEMARY<br></h3>
+					<h4>2020 Open Software Platform Team8</h4>
+				</div>
+				<div class="center_box" style="float:left; width:50%; background-color: black; color: white;">
+					SITE<br><br>
+					<h4 id="site-define">Main<br></h4>
+					<h4 id="site-define">Genre<br></h4>
+					<h4 id="site-define">Top10<br></h4>
+					<h4 id="site-define">New<br></h4>
+					<h4 id="site-define">My<br></h4>
+				</div>
+				<div class="right_box" style="float:left; width:50%; background-color: black; color: white;">
+					CONTECT<br><br>
+					DEVELPED BY<br><br>
+					<h4 id="site-define">
+						Eunyoung (danbom)<br>
+						Sunwoo (mallang7)<br>
+						MinA (Ming)<br>
+						Seoyoung (dltjdud808)
+					</h4>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="score_script.js"></script>
+</body>
+
+</html>
