@@ -1,5 +1,5 @@
 ## :clapper: SONEMARY
-### SONEMARY : 2020년도 오픈소프트웨어플랫폼 프로젝트
+### SONEMARY
 A New Movie Review Site that has changed its serialized evaluation method
 , unlike existing sites that always evaluate movies with 5 stars.</br></br>
 :link: SONEMARY Link 👋 https://www.youtube.com/watch?v=LD0oCE0AnDI&ab_channel=%EC%9C%BC%EB%85%95
@@ -104,7 +104,7 @@ CREATE TABLE `review` (
   - 이화여자대학교 컴퓨터공학과 1971005
 - Seoyoung (dltjdud808)
   - 이화여자대학교 컴퓨터공학과 1971033
-
+<!-- 
 ### 2. Branches
 ![image](https://user-images.githubusercontent.com/52441697/102416265-d58dfd80-403c-11eb-803d-1ec7ef49adbb.png)
-![image](https://user-images.githubusercontent.com/52441697/102416265-d58dfd80-403c-11eb-803d-1ec7ef49adbb.png)
+![image](https://user-images.githubusercontent.com/52441697/102416265-d58dfd80-403c-11eb-803d-1ec7ef49adbb.png) -->
